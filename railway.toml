@@ -1,0 +1,15 @@
+[build]
+builder = "nixpacks"
+
+[deploy]
+healthcheckPath = "/"
+healthcheckTimeout = 300
+restartPolicyType = "on_failure"
+
+[environment]
+FLASK_ENV = "production"
+SECRET_KEY = "edu-plataforma-secret-key-production-2024"
+DATABASE_URL = "${{Postgres.DATABASE_URL}}"
+
+[service]
+name = "web" 

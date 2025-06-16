@@ -1,0 +1,144 @@
+{
+    "habilidades": [
+        {
+            "codigo": "EF05MA01",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Ler, escrever e ordenar números naturais até a ordem de centenas de milhar com compreensão das principais características do sistema de numeração decimal."
+        },
+        {
+            "codigo": "EF05MA02",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Ler, escrever e ordenar números racionais na forma decimal com compreensão das principais características do sistema de numeração decimal, utilizando, como recursos, a composição e decomposição e a reta numérica."
+        },
+        {
+            "codigo": "EF05MA03",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Identificar e representar frações (menores e maiores que a unidade), associando-as ao resultado de uma divisão ou à ideia de parte de um todo, utilizando a reta numérica como recurso."
+        },
+        {
+            "codigo": "EF05MA04",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Identificar frações equivalentes."
+        },
+        {
+            "codigo": "EF05MA05",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Comparar e ordenar frações próprias e impróprias (com denominadores iguais ou diferentes, com numeradores iguais ou diferentes, por meio de diferentes estratégias, sem fazer uso da transformação delas em números decimais."
+        },
+        {
+            "codigo": "EF05MA06",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Associar as representações 10%, 25%, 50%, 75% e 100% respectivamente à décima parte, quarta parte, metade, três quartos e um inteiro, para calcular porcentagens, utilizando estratégias pessoais, cálculo mental e calculadora, em contextos de educação financeira, entre outros."
+        },
+        {
+            "codigo": "EF05MA07",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Resolver e elaborar problemas de adição e subtração com números naturais e com números racionais, cuja representação decimal seja finita, utilizando estratégias diversas, como cálculo por estimativa, cálculo mental e algoritmos."
+        },
+        {
+            "codigo": "EF05MA08",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Resolver e elaborar problemas de multiplicação e divisão com números naturais e com números racionais cuja representação decimal é finita (com multiplicador natural e divisor natural e diferente de zero), utilizando estratégias diversas, como cálculo por estimativa, cálculo mental e algoritmos."
+        },
+        {
+            "codigo": "EF05MA09",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Resolver e elaborar problemas simples de contagem envolvendo o princípio multiplicativo, como a determinação do número de agrupamentos possíveis ao se combinar cada elemento de uma coleção com todos os elementos de outra coleção, por meio de diagramas de árvore ou por tabelas."
+        },
+        {
+            "codigo": "EF05MA10",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Concluir, por meio de investigações, que a relação de igualdade existente entre dois membros permanece ao adicionar, subtrair, multiplicar ou dividir cada um desses membros por um mesmo número, para construir a noção de equivalência."
+        },
+        {
+            "codigo": "EF05MA11",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Resolver e elaborar problemas cuja conversão em sentença matemática seja uma igualdade com uma operação em que um dos termos é desconhecido."
+        },
+        {
+            "codigo": "EF05MA12",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Resolver problemas que envolvam variação de proporcionalidade direta entre duas grandezas, para associar a quantidade de um produto ao valor a pagar, alterar as quantidades de ingredientes de receitas, ampliar ou reduzir escala em mapas, entre outros."
+        },
+        {
+            "codigo": "EF05MA13",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Resolver problemas envolvendo a partilha de uma quantidade em duas partes desiguais, tais como dividir uma quantidade em duas partes, de modo que uma seja o dobro da outra, com compreensão da ideia de razão entre as partes e delas com o todo."
+        },
+        {
+            "codigo": "EF05MA14",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Utilizar e compreender diferentes representações para a localização de objetos no plano, como mapas, células em planilhas eletrônicas e coordenadas geográficas, a fim de desenvolver as primeiras noções de coordenadas cartesianas."
+        },
+        {
+            "codigo": "EF05MA15",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Interpretar, descrever e representar a localização e a movimentação de pessoas ou objetos no espaço, segundo diferentes pontos de vista, utilizando as ideias de mudança de direção e sentido, de ângulo, de giro, de inclinação, de paralelismo e de perpendicularismo."
+        },
+        {
+            "codigo": "EF05MA16",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Aplicar os conceitos de volume (capacidade) e de área, a partir de composição e decomposição de figuras, usando multirrepresentações."
+        },
+        {
+            "codigo": "EF05MA17",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Reconhecer, nomear e comparar polígonos, considerando lados, vértices e ângulos, e classificá-los em regulares e não regulares, tanto em suas representações no plano quanto em faces de poliedros."
+        },
+        {
+            "codigo": "EF05MA18",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Reconhecer a congruência dos ângulos e a proporcionalidade dos lados correspondentes de figuras poligonais em situações de ampliação e de redução em malhas quadriculadas e usando tecnologias digitais."
+        },
+        {
+            "codigo": "EF05MA19",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Resolver e elaborar problemas envolvendo medidas das grandezas comprimento, área, massa, tempo, temperatura e capacidade, recorrendo a transformações entre as unidades mais usuais em contextos socioculturais."
+        },
+        {
+            "codigo": "EF05MA20",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Concluir, por meio de investigações, que figuras de mesmo perímetro podem ter áreas diferentes e que figuras de mesma área podem ter perímetros diferentes."
+        }
+    ]
+} 

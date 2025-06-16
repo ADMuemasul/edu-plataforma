@@ -1,0 +1,1128 @@
+{% extends "base.html" %}
+
+{% block title %}Cadastrar Questões{% endblock %}
+
+{% block content %}
+<!-- Background com efeito glassmorphism -->
+<div class="main-wrapper">
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+<div class="container">
+        <!-- Header com animação -->
+        <header class="modern-header">
+            <div class="header-content">
+                <div class="icon-wrapper">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <h1>Gestão de Questões</h1>
+                <p>Sistema inteligente para criar e gerenciar questões educacionais</p>
+            </div>
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <span class="stat-number" id="total-turmas">{{ turmas|length if turmas else 0 }}</span>
+                    <span class="stat-label">Turmas</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="total-questoes">0</span>
+                    <span class="stat-label">Questões</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="total-habilidades">0</span>
+                    <span class="stat-label">Habilidades</span>
+                </div>
+            </div>
+    </header>
+
+        <!-- Seção de Turmas -->
+        <section class="glass-card turmas-section">
+            <div class="card-header">
+                <div class="header-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="header-text">
+                    <h2>Selecionar Turma</h2>
+                    <p>Escolha uma turma para cadastrar questões</p>
+                </div>
+                <div class="search-wrapper">
+                    <input type="text" id="search-turmas" placeholder="Buscar turma...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+
+        {% if turmas and turmas|length > 0 %}
+                <div class="turmas-grid" id="turmas-container">
+            {% for turma in turmas %}
+                    <div class="turma-card" data-turma="{{ turma.nome|lower }}">
+                        <div class="turma-header">
+                            <div class="turma-icon">
+                                <span class="serie-badge">{{ turma.ano }}º</span>
+                            </div>
+                <div class="turma-info">
+                                <h3>{{ turma.nome }}</h3>
+                                <p class="turma-details">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    {{ turma.ano }}º ano - {{ turma.turno }}
+                                </p>
+                            </div>
+                            <div class="turma-status">
+                                <div class="status-indicator active"></div>
+                                <span class="status-text">Ativa</span>
+                            </div>
+                        </div>
+
+                        <div class="turma-stats">
+                            <div class="stat-mini">
+                                <i class="fas fa-user-graduate"></i>
+                                <span>{{ turma.alunos|length if turma.alunos else 0 }} alunos</span>
+                            </div>
+                            <div class="stat-mini">
+                                <i class="fas fa-question-circle"></i>
+                                <span id="questoes-turma-{{ turma.id }}">0 questões</span>
+                            </div>
+                        </div>
+
+                        <div class="turma-actions">
+                            <a href="{{ url_for('cadastrar_questao', turma_id=turma.id) }}" class="action-btn primary-btn">
+                                <i class="fas fa-plus"></i>
+                                Cadastrar Questão
+                            </a>
+                            <button data-turma-id="{{ turma.id }}" class="action-btn secondary-btn btn-ver-questoes">
+                                <i class="fas fa-list"></i>
+                                Ver Questões
+                            </button>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <!-- Empty State -->
+                <div class="empty-state">
+                    <div class="empty-icon">
+                        <i class="fas fa-users-slash"></i>
+                    </div>
+                    <h3>Nenhuma turma cadastrada</h3>
+                    <p>Cadastre turmas primeiro para poder criar questões</p>
+                    <a href="/turmas" class="action-btn primary-btn">
+                        <i class="fas fa-plus"></i>
+                        Cadastrar Turmas
+                    </a>
+                </div>
+            {% endif %}
+        </section>
+
+        <!-- Seção de Componentes Curriculares -->
+        <section class="glass-card componentes-section">
+            <div class="card-header">
+                <div class="header-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <div class="header-text">
+                    <h2>Componentes Curriculares</h2>
+                    <p>Questões organizadas por disciplina</p>
+                </div>
+            </div>
+
+            <div class="componentes-grid">
+                <div class="componente-card matematica-card">
+                    <div class="componente-header">
+                        <div class="componente-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h3>Matemática</h3>
+                        <div class="componente-badge">
+                            <span id="questoes-matematica">0</span>
+                        </div>
+                    </div>
+                    
+                    <div class="componente-content">
+                        <p>Questões de raciocínio lógico, cálculos e resolução de problemas matemáticos.</p>
+                        
+                        <div class="anos-container">
+                            {% for ano in [1, 2, 3, 4, 5, 6, 7, 8, 9] %}
+                            <div class="ano-item">
+                                <div class="ano-info">
+                                    <span class="ano">{{ ano }}º</span>
+                                    <span class="label">ano</span>
+                                </div>
+                                <span class="questoes-count" id="mat-{{ ano }}">0</span>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="componente-card portugues-card">
+                    <div class="componente-header">
+                        <div class="componente-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Língua Portuguesa</h3>
+                        <div class="componente-badge">
+                            <span id="questoes-portugues">0</span>
+                        </div>
+                    </div>
+                    
+                    <div class="componente-content">
+                        <p>Questões de interpretação, gramática, literatura e produção textual.</p>
+                        
+                        <div class="anos-container">
+                            {% for ano in [1, 2, 3, 4, 5, 6, 7, 8, 9] %}
+                            <div class="ano-item">
+                                <div class="ano-info">
+                                    <span class="ano">{{ ano }}º</span>
+                                    <span class="label">ano</span>
+                                </div>
+                                <span class="questoes-count" id="port-{{ ano }}">0</span>
+            </div>
+            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!-- Modal para visualizar questões da turma -->
+<div class="modal-overlay" id="modal-questoes-turma" style="display: none;">
+    <div class="modal-content large-modal">
+        <div class="modal-header">
+            <h3 id="modal-title">Questões da Turma</h3>
+            <button class="close-btn" onclick="fecharModalQuestoes()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div id="questoes-lista" class="questoes-lista">
+                <!-- Questões serão carregadas aqui -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    :root {
+        --primary: #457D97;
+        --secondary: #FFFFFD;
+        --accent: #457D97;
+        --success: #457D97;
+        --warning: #457D97;
+        --danger: #d32f2f;
+        --dark: #457D97;
+        --light: #FFFFFD;
+        --glass: rgba(255, 255, 253, 0.25);
+        --glass-border: rgba(255, 255, 253, 0.18);
+        --shadow: 0 8px 32px 0 rgba(69, 125, 151, 0.37);
+        --text-primary: #457D97;
+        --text-secondary: #6b9bb3;
+    }
+
+    body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        background: linear-gradient(135deg, #457D97 0%, #6b9bb3 50%, #FFFFFD 100%);
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+
+    .main-wrapper {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    .background-shapes {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        overflow: hidden;
+    }
+
+    .shape {
+        position: absolute;
+        border-radius: 50%;
+        background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+        animation: float 6s ease-in-out infinite;
+    }
+
+    .shape-1 {
+        width: 300px;
+        height: 300px;
+        top: 10%;
+        left: 10%;
+        animation-delay: 0s;
+    }
+
+    .shape-2 {
+        width: 200px;
+        height: 200px;
+        top: 60%;
+        right: 10%;
+        animation-delay: 2s;
+    }
+
+    .shape-3 {
+        width: 150px;
+        height: 150px;
+        bottom: 20%;
+        left: 60%;
+        animation-delay: 4s;
+    }
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-20px) rotate(180deg); }
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    /* Header Moderno */
+    .modern-header {
+        text-align: center;
+        margin-bottom: 3rem;
+        animation: slideDown 0.8s ease-out;
+    }
+
+    .header-content {
+        margin-bottom: 2rem;
+    }
+
+    .icon-wrapper {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: var(--shadow);
+    }
+
+    .icon-wrapper i {
+        font-size: 2.5rem;
+        color: white;
+    }
+
+    .modern-header h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 0.5rem;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .modern-header p {
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: 300;
+    }
+
+    .stats-bar {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        margin-top: 2rem;
+    }
+
+    .stat-item {
+        text-align: center;
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        border-radius: 15px;
+        padding: 1.5rem 2rem;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: var(--shadow);
+        transition: transform 0.3s ease;
+    }
+
+    .stat-item:hover {
+        transform: translateY(-5px);
+    }
+
+    .stat-number {
+        display: block;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: white;
+        line-height: 1;
+    }
+
+    .stat-label {
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.8);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    /* Glass Cards */
+    .glass-card {
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        border-radius: 20px;
+        padding: 2.5rem;
+        margin-bottom: 2rem;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: var(--shadow);
+        animation: slideUp 0.8s ease-out;
+    }
+
+    .card-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        gap: 1rem;
+    }
+
+    .header-icon {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 15px rgba(69, 125, 151, 0.3);
+    }
+
+    .header-icon i {
+        font-size: 1.5rem;
+        color: var(--secondary);
+    }
+
+    .header-text h2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 0.3rem;
+    }
+
+    .header-text p {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 1rem;
+    }
+
+    .search-wrapper {
+        margin-left: auto;
+        position: relative;
+    }
+
+    .search-wrapper input {
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 25px;
+        padding: 0.8rem 1rem 0.8rem 3rem;
+        color: white;
+        font-size: 1rem;
+        width: 250px;
+        transition: all 0.3s ease;
+    }
+
+    .search-wrapper input::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .search-wrapper input:focus {
+        outline: none;
+        background: rgba(255, 255, 255, 0.3);
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .search-wrapper i {
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    /* Grid de Turmas */
+    .turmas-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .turma-card {
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 15px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        animation: slideUp 0.5s ease-out;
+    }
+
+    .turma-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .turma-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        gap: 1rem;
+    }
+
+    .turma-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 12px;
+        background: linear-gradient(135deg, var(--primary), var(--text-secondary));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .serie-badge {
+        color: white;
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+
+    .turma-info {
+        flex: 1;
+    }
+
+    .turma-info h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--text-primary);
+        margin-bottom: 0.3rem;
+    }
+
+    .turma-details {
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .turma-status {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .status-indicator {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #28a745;
+    }
+
+    .status-text {
+        font-size: 0.8rem;
+        color: #28a745;
+        font-weight: 500;
+    }
+
+    .turma-stats {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        background: rgba(69, 125, 151, 0.05);
+        border-radius: 8px;
+    }
+
+    .stat-mini {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+    }
+
+    .stat-mini i {
+        color: var(--primary);
+    }
+
+    .turma-actions {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .action-btn {
+        flex: 1;
+        padding: 0.8rem 1rem;
+        border: none;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .primary-btn {
+        background: linear-gradient(135deg, var(--primary), var(--text-secondary));
+        color: var(--secondary);
+    }
+
+    .secondary-btn {
+        background: #6c757d;
+        color: white;
+    }
+
+    .action-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Empty State */
+    .empty-state {
+        text-align: center;
+        padding: 3rem;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .empty-icon {
+        width: 80px;
+        height: 80px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1rem;
+    }
+
+    .empty-icon i {
+        font-size: 2rem;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .empty-state h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .empty-state p {
+        margin-bottom: 1.5rem;
+    }
+
+    /* Componentes Grid */
+    .componentes-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 2rem;
+    }
+
+    .componente-card {
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 15px;
+        padding: 2rem;
+        transition: transform 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .componente-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .matematica-card {
+        border-left: 4px solid #e74c3c;
+    }
+
+    .portugues-card {
+        border-left: 4px solid #3498db;
+    }
+
+    .componente-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        gap: 1rem;
+    }
+
+    .componente-icon {
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(135deg, var(--primary), var(--text-secondary));
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .componente-icon i {
+        font-size: 1.3rem;
+        color: var(--secondary);
+    }
+
+    .componente-header h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--text-primary);
+        flex: 1;
+    }
+
+    .componente-badge {
+        background: var(--primary);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 15px;
+        font-weight: 600;
+    }
+
+    .componente-content p {
+        color: var(--text-secondary);
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+    }
+
+    .anos-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 0.5rem;
+    }
+
+    .ano-item {
+        background: rgba(69, 125, 151, 0.05);
+        border-radius: 8px;
+        padding: 0.8rem;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .ano-item:hover {
+        background: rgba(69, 125, 151, 0.1);
+        transform: translateY(-2px);
+    }
+
+    .ano-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0.3rem;
+    }
+
+    .ano-info .ano {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--primary);
+    }
+
+    .ano-info .label {
+        color: var(--text-secondary);
+        font-size: 0.8rem;
+    }
+
+    .questoes-count {
+        font-size: 0.9rem;
+        color: var(--text-secondary);
+        font-weight: 500;
+    }
+
+    /* Modal */
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .modal-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .modal-content {
+        background: white;
+        border-radius: 20px;
+        padding: 2rem;
+        max-width: 800px;
+        width: 90%;
+        max-height: 90vh;
+        overflow-y: auto;
+        transform: scale(0.8);
+        transition: transform 0.3s ease;
+    }
+
+    .modal-overlay.active .modal-content {
+        transform: scale(1);
+    }
+
+    .large-modal {
+        max-width: 1000px;
+    }
+
+    .modal-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #e2e8f0;
+    }
+
+    .modal-header h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--text-primary);
+    }
+
+    .close-btn {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: var(--text-secondary);
+        cursor: pointer;
+        padding: 0.5rem;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+    }
+
+    .close-btn:hover {
+        background: #f7fafc;
+        color: var(--text-primary);
+    }
+
+    .questoes-lista {
+        display: grid;
+        gap: 1rem;
+    }
+
+    .questao-item-modal {
+        background: #f8f9fa;
+        border-radius: 12px;
+        padding: 1.5rem;
+        border-left: 4px solid var(--primary);
+    }
+
+    .questao-header-modal {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .questao-titulo-modal {
+        font-weight: 600;
+        color: var(--text-primary);
+    }
+
+    .questao-habilidade-modal {
+        background: rgba(69, 125, 151, 0.1);
+        color: var(--primary);
+        padding: 0.3rem 0.8rem;
+        border-radius: 15px;
+        font-size: 0.8rem;
+    }
+
+    /* Animações */
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+        .container {
+            padding: 1rem;
+        }
+
+        .modern-header h1 {
+            font-size: 2rem;
+        }
+
+        .stats-bar {
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .card-header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .search-wrapper {
+            margin-left: 0;
+            width: 100%;
+        }
+
+        .search-wrapper input {
+            width: 100%;
+        }
+
+        .turmas-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .componentes-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .turma-actions {
+            flex-direction: column;
+        }
+
+        .anos-container {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Configurar busca de turmas
+    const searchInput = document.getElementById('search-turmas');
+    if (searchInput) {
+        searchInput.addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const turmaCards = document.querySelectorAll('.turma-card');
+            
+            turmaCards.forEach(card => {
+                const turmaNome = card.dataset.turma;
+                if (turmaNome.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    }
+
+    // Configurar botões de ver questões
+    const btnVerQuestoes = document.querySelectorAll('.btn-ver-questoes');
+    btnVerQuestoes.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const turmaId = this.dataset.turmaId;
+            verQuestoesTurma(turmaId);
+        });
+    });
+
+    // Carregar estatísticas
+    carregarEstatisticas();
+});
+
+// Função para carregar estatísticas
+function carregarEstatisticas() {
+    // Carregar total de questões
+    fetch('/api/questoes')
+        .then(response => response.json())
+        .then(data => {
+            const totalQuestoes = data.questoes ? data.questoes.length : 0;
+            animarContador('total-questoes', totalQuestoes);
+            
+            // Contar questões por componente e ano
+            if (data.questoes) {
+                contarQuestoesPorComponente(data.questoes);
+            }
+        })
+        .catch(error => {
+            console.error('Erro ao carregar questões:', error);
+            document.getElementById('total-questoes').textContent = '0';
+        });
+
+    // Carregar total de habilidades
+    fetch('/api/habilidades')
+        .then(response => response.json())
+        .then(data => {
+            const totalHabilidades = data.habilidades ? data.habilidades.length : 0;
+            animarContador('total-habilidades', totalHabilidades);
+        })
+        .catch(error => {
+            console.error('Erro ao carregar habilidades:', error);
+            document.getElementById('total-habilidades').textContent = '0';
+        });
+}
+
+// Função para contar questões por componente
+function contarQuestoesPorComponente(questoes) {
+    const contadores = {
+        matematica: 0,
+        portugues: 0,
+        anos: {}
+    };
+
+    // Inicializar contadores por ano
+    for (let ano = 1; ano <= 9; ano++) {
+        contadores.anos[`mat-${ano}`] = 0;
+        contadores.anos[`port-${ano}`] = 0;
+    }
+
+    // Buscar habilidades para mapear questões
+    fetch('/api/habilidades')
+        .then(response => response.json())
+        .then(data => {
+            const habilidades = data.habilidades || [];
+            
+            questoes.forEach(questao => {
+                const habilidade = habilidades.find(h => h.id === questao.habilidade_id);
+                if (habilidade) {
+                    const componente = habilidade.componente.toLowerCase();
+                    const ano = habilidade.ano;
+                    
+                    if (componente.includes('matemática')) {
+                        contadores.matematica++;
+                        contadores.anos[`mat-${ano}`]++;
+                    } else if (componente.includes('português') || componente.includes('língua portuguesa')) {
+                        contadores.portugues++;
+                        contadores.anos[`port-${ano}`]++;
+                    }
+                }
+            });
+
+            // Atualizar interface
+            document.getElementById('questoes-matematica').textContent = contadores.matematica;
+            document.getElementById('questoes-portugues').textContent = contadores.portugues;
+
+            // Atualizar contadores por ano
+            Object.keys(contadores.anos).forEach(key => {
+                const elemento = document.getElementById(key);
+                if (elemento) {
+                    elemento.textContent = contadores.anos[key];
+                }
+            });
+        })
+        .catch(error => console.error('Erro ao processar habilidades:', error));
+}
+
+// Função para animar contadores
+function animarContador(elementId, valorFinal) {
+    const elemento = document.getElementById(elementId);
+    if (!elemento) return;
+    
+    const valorInicial = 0;
+    const duracao = 1000;
+    const incremento = valorFinal / (duracao / 16);
+    
+    let valorAtual = valorInicial;
+    
+    const timer = setInterval(() => {
+        valorAtual += incremento;
+        if (valorAtual >= valorFinal) {
+            elemento.textContent = valorFinal;
+            clearInterval(timer);
+        } else {
+            elemento.textContent = Math.floor(valorAtual);
+        }
+    }, 16);
+}
+
+// Função para ver questões da turma
+function verQuestoesTurma(turmaId) {
+    const modal = document.getElementById('modal-questoes-turma');
+    const modalTitle = document.getElementById('modal-title');
+    const questoesLista = document.getElementById('questoes-lista');
+    
+    // Buscar informações da turma
+    const turmaCard = document.querySelector(`[data-turma]`);
+    const turmaNome = turmaCard ? turmaCard.querySelector('h3').textContent : 'Turma';
+    
+    modalTitle.textContent = `Questões da ${turmaNome}`;
+    questoesLista.innerHTML = '<div class="loading"><i class="fas fa-spinner fa-spin"></i> Carregando questões...</div>';
+    
+    modal.classList.add('active');
+    
+    // Carregar questões da turma
+    fetch(`/api/questoes?turma_id=${turmaId}`)
+        .then(response => response.json())
+        .then(data => {
+            if (data.questoes && data.questoes.length > 0) {
+                questoesLista.innerHTML = '';
+                data.questoes.forEach(questao => {
+                    const questaoElement = criarElementoQuestaoModal(questao);
+                    questoesLista.appendChild(questaoElement);
+                });
+            } else {
+                questoesLista.innerHTML = '<div class="empty-state"><p>Nenhuma questão encontrada para esta turma.</p></div>';
+            }
+        })
+        .catch(error => {
+            console.error('Erro ao carregar questões:', error);
+            questoesLista.innerHTML = '<div class="error-message">Erro ao carregar questões. Tente novamente.</div>';
+        });
+}
+
+// Função para criar elemento de questão no modal
+function criarElementoQuestaoModal(questao) {
+    const div = document.createElement('div');
+    div.className = 'questao-item-modal';
+    
+    div.innerHTML = `
+        <div class="questao-header-modal">
+            <span class="questao-titulo-modal">Questão #${questao.id}</span>
+            <span class="questao-habilidade-modal">${questao.habilidade_codigo || 'N/A'}</span>
+        </div>
+        <div class="questao-enunciado">${questao.enunciado}</div>
+    `;
+    
+    return div;
+}
+
+// Função para fechar modal
+function fecharModalQuestoes() {
+    const modal = document.getElementById('modal-questoes-turma');
+    modal.classList.remove('active');
+}
+
+// Fechar modal clicando fora
+document.getElementById('modal-questoes-turma').addEventListener('click', function(e) {
+    if (e.target === this) {
+        fecharModalQuestoes();
+    }
+});
+</script>
+{% endblock %} 

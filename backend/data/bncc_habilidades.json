@@ -1,0 +1,333 @@
+{
+    "habilidades": [
+        {
+            "codigo": "EF01MA01",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Utilizar números naturais como indicador de quantidade ou de ordem em diferentes situações cotidianas e reconhecer situações em que os números não indicam contagem nem ordem, mas sim código de identificação."
+        },
+        {
+            "codigo": "EF01MA02",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Contar de maneira exata ou aproximada, utilizando diferentes estratégias como o pareamento e outros agrupamentos."
+        },
+        {
+            "codigo": "EF01MA03",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Estimar e comparar quantidades de objetos de dois conjuntos (em torno de 20 elementos), por estimativa e/ou por correspondência um a um e/ou contagem, indicando, em cada caso, quais conjuntos têm mais, menos ou a mesma quantidade de elementos."
+        },
+        {
+            "codigo": "EF01MA04",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Comunicar ideias matemáticas, hipóteses, processos utilizados e resultados encontrados em situações-problema relativas a quantidades, espaço físico e medida, utilizando vocabulário próprio em contextos de uso social."
+        },
+        {
+            "codigo": "EF01MA05",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Comparar números naturais de até duas ordens em situações cotidianas, com e sem suporte da reta numérica."
+        },
+        {
+            "codigo": "EF01MA06",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Construir fatos básicos da adição e utilizá-los em procedimentos de cálculo para resolver problemas."
+        },
+        {
+            "codigo": "EF01MA07",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Compor e decompor números de até duas ordens, por meio de diferentes adições, com o suporte de material manipulável, contribuindo para a compreensão de características do sistema de numeração decimal e o desenvolvimento de estratégias de cálculo."
+        },
+        {
+            "codigo": "EF01MA08",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Relacionar números às suas respectivas quantidades e identificar o número que vem antes, depois, entre dois números."
+        },
+        {
+            "codigo": "EF01MA09",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Organizar e ordenar objetos familiares ou representações por figuras, por meio de atributos, tais como cor, forma e medida."
+        },
+        {
+            "codigo": "EF01MA10",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Descrever, após o reconhecimento e a explicitação de um padrão (ou regularidade), os elementos ausentes em sequências recursivas de números naturais, objetos ou figuras."
+        },
+        {
+            "codigo": "EF01MA11",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Descrever a localização de pessoas e de objetos no espaço em relação à sua própria posição, utilizando termos como à direita, à esquerda, em frente, atrás, acima, abaixo, dentro, fora etc., empregando pontos de referência."
+        },
+        {
+            "codigo": "EF01MA12",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Descrever a localização de pessoas e de objetos no espaço em relação à sua própria posição, utilizando termos como à direita, à esquerda, em frente, atrás, acima, abaixo, dentro, fora etc., empregando pontos de referência."
+        },
+        {
+            "codigo": "EF01MA13",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Identificar e nomear figuras planas (círculo, quadrado, retângulo e triângulo) em desenhos apresentados em diferentes disposições ou em contornos de faces de sólidos geométricos."
+        },
+        {
+            "codigo": "EF01MA14",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Identificar e nomear figuras planas (círculo, quadrado, retângulo e triângulo) em desenhos apresentados em diferentes disposições ou em contornos de faces de sólidos geométricos."
+        },
+        {
+            "codigo": "EF01MA15",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Reconhecer e comparar comprimentos, massas e capacidades, utilizando unidades não convencionais e convencionais, sem utilizar fórmulas."
+        },
+        {
+            "codigo": "EF01MA16",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Reconhecer e comparar comprimentos, massas e capacidades, utilizando unidades não convencionais e convencionais, sem utilizar fórmulas."
+        },
+        {
+            "codigo": "EF01MA17",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Reconhecer e comparar comprimentos, massas e capacidades, utilizando unidades não convencionais e convencionais, sem utilizar fórmulas."
+        },
+        {
+            "codigo": "EF01MA18",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Reconhecer e comparar comprimentos, massas e capacidades, utilizando unidades não convencionais e convencionais, sem utilizar fórmulas."
+        },
+        {
+            "codigo": "EF01MA19",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Reconhecer e comparar comprimentos, massas e capacidades, utilizando unidades não convencionais e convencionais, sem utilizar fórmulas."
+        },
+        {
+            "codigo": "EF01MA20",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Reconhecer e comparar comprimentos, massas e capacidades, utilizando unidades não convencionais e convencionais, sem utilizar fórmulas."
+        },
+        {
+            "codigo": "EF02MA01",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Comparar e ordenar números naturais (até a ordem de centenas) pela compreensão de características do sistema de numeração decimal (valor posicional e função do zero)."
+        },
+        {
+            "codigo": "EF02MA02",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Fazer estimativas por meio de estratégias diversas a respeito da quantidade de objetos de coleções e registrar o resultado da contagem desses objetos (até 100 objetos)."
+        },
+        {
+            "codigo": "EF02MA03",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Comparar quantidades de objetos de dois conjuntos, por estimativa e/ou por correspondência um a um (sem fazer a contagem dos elementos) e/ou por contagem, indicando, em cada caso, quais conjuntos têm mais, menos ou a mesma quantidade de elementos."
+        },
+        {
+            "codigo": "EF02MA04",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Compor e decompor números naturais de até três ordens, com suporte de material manipulável, por meio de diferentes adições."
+        },
+        {
+            "codigo": "EF02MA05",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Construir fatos básicos da adição e subtração e utilizá-los em procedimentos de cálculo para resolver problemas."
+        },
+        {
+            "codigo": "EF02MA06",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Resolver e elaborar problemas de adição e de subtração, envolvendo números de até três ordens, com os significados de juntar, acrescentar, separar, retirar, utilizando estratégias pessoais ou convencionais."
+        },
+        {
+            "codigo": "EF02MA07",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Resolver e elaborar problemas de multiplicação (por 2, 3, 4, 5 e 10) com os significados de adição de parcelas iguais e elementos apresentados em disposição retangular, utilizando diferentes estratégias de cálculo e registros."
+        },
+        {
+            "codigo": "EF02MA08",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Resolver e elaborar problemas envolvendo dobro, metade, triplo e terça parte, com o suporte de imagens ou material manipulável, utilizando estratégias pessoais."
+        },
+        {
+            "codigo": "EF02MA09",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Construir sequências de números naturais em ordem crescente ou decrescente a partir de um número qualquer, utilizando uma regularidade estabelecida."
+        },
+        {
+            "codigo": "EF02MA10",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Descrever um padrão (ou regularidade) de sequências repetitivas e de sequências recursivas, observando padrões até o 10º termo."
+        },
+        {
+            "codigo": "EF02MA11",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Descrever a localização de pessoas e de objetos no espaço em relação à sua própria posição, utilizando termos como à direita, à esquerda, em frente, atrás, acima, abaixo, dentro, fora etc., empregando pontos de referência."
+        },
+        {
+            "codigo": "EF02MA12",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Identificar e nomear figuras planas (círculo, quadrado, retângulo e triângulo) em desenhos apresentados em diferentes disposições ou em contornos de faces de sólidos geométricos."
+        },
+        {
+            "codigo": "EF02MA13",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Identificar e nomear figuras planas (círculo, quadrado, retângulo e triângulo) em desenhos apresentados em diferentes disposições ou em contornos de faces de sólidos geométricos."
+        },
+        {
+            "codigo": "EF02MA14",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Reconhecer e comparar comprimentos, massas e capacidades, utilizando unidades não convencionais e convencionais, sem utilizar fórmulas."
+        },
+        {
+            "codigo": "EF02MA15",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Reconhecer e comparar comprimentos, massas e capacidades, utilizando unidades não convencionais e convencionais, sem utilizar fórmulas."
+        },
+        {
+            "codigo": "EF02MA16",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Reconhecer e comparar comprimentos, massas e capacidades, utilizando unidades não convencionais e convencionais, sem utilizar fórmulas."
+        },
+        {
+            "codigo": "EF02MA17",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Reconhecer e comparar comprimentos, massas e capacidades, utilizando unidades não convencionais e convencionais, sem utilizar fórmulas."
+        },
+        {
+            "codigo": "EF02MA18",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Reconhecer e comparar comprimentos, massas e capacidades, utilizando unidades não convencionais e convencionais, sem utilizar fórmulas."
+        },
+        {
+            "codigo": "EF02MA19",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Reconhecer e comparar comprimentos, massas e capacidades, utilizando unidades não convencionais e convencionais, sem utilizar fórmulas."
+        },
+        {
+            "codigo": "EF02MA20",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Reconhecer e comparar comprimentos, massas e capacidades, utilizando unidades não convencionais e convencionais, sem utilizar fórmulas."
+        },
+        {
+            "codigo": "EF03MA01",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Ler, escrever e comparar números naturais de até a ordem de unidade de milhar, estabelecendo relações entre os registros numéricos e em língua materna."
+        },
+        {
+            "codigo": "EF04MA01",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Ler, escrever e ordenar números naturais até a ordem de dezenas de milhar."
+        },
+        {
+            "codigo": "EF05MA01",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Ler, escrever e ordenar números naturais até a ordem das centenas de milhar com compreensão das principais características do sistema de numeração decimal."
+        },
+        {
+            "codigo": "EF06MA01",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 6,
+            "descricao": "Comparar, ordenar, ler e escrever números naturais e números racionais cuja representação decimal é finita, fazendo uso da reta numérica."
+        },
+        {
+            "codigo": "EF07MA01",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Resolver e elaborar problemas com números naturais, envolvendo as noções de divisor e de múltiplo, podendo incluir máximo divisor comum ou mínimo múltiplo comum, por meio de estratégias diversas, sem a aplicação de algoritmos."
+        },
+        {
+            "codigo": "EF08MA01",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Efetuar cálculos com potências de expoentes inteiros e aplicar esse conhecimento na representação de números em notação científica."
+        },
+        {
+            "codigo": "EF09MA01",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Compreender os processos de fatoração de expressões algébricas, com base em suas relações com os produtos notáveis, para resolver e elaborar problemas que possam ser representados por equações polinomiais do 2º grau."
+        }
+    ]
+} 

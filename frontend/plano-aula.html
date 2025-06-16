@@ -1,0 +1,1128 @@
+{% extends "base.html" %}
+{% block title %}Gerar Plano de Aula{% endblock %}
+{% block content %}
+<!-- Background com efeito glassmorphism -->
+<div class="main-wrapper">
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <div class="container">
+        <!-- Header com animação -->
+        <header class="modern-header">
+            <div class="header-content">
+                <div class="icon-wrapper">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h1>Gerar Plano de Aula</h1>
+                <p>Crie planos de aula personalizados com IA</p>
+            </div>
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <span class="stat-number" id="total-habilidades">0</span>
+                    <span class="stat-label">Habilidades</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="total-planos">0</span>
+                    <span class="stat-label">Planos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="planos-hoje">0</span>
+                    <span class="stat-label">Hoje</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Seção de Geração -->
+        <section class="glass-card form-section">
+            <div class="card-header">
+                <div class="header-icon">
+                    <i class="fas fa-magic"></i>
+                </div>
+                <div class="header-text">
+                    <h2>Novo Plano de Aula</h2>
+                    <p>Selecione uma habilidade BNCC para gerar automaticamente</p>
+                </div>
+            </div>
+
+            <form id="plano-form" class="modern-form">
+                <div class="form-grid">
+                    <div class="input-group full-width">
+                        <div class="select-wrapper">
+                            <select id="habilidade" required>
+                                <option value="">Carregando habilidades...</option>
+                            </select>
+                            <label for="habilidade">Habilidade BNCC</label>
+                            <div class="select-arrow">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div id="habilidade-info" class="habilidade-info" style="display: none;"></div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-wrapper">
+                            <input type="text" id="componente" disabled>
+                            <label for="componente">Componente Curricular</label>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-wrapper">
+                            <input type="number" id="ano" min="1" max="9" disabled>
+                            <label for="ano">Ano Escolar</label>
+                        </div>
+                    </div>
+
+                    <div class="input-group full-width">
+                        <div class="input-wrapper">
+                            <input type="text" id="tema" disabled>
+                            <label for="tema">Tema da Aula</label>
+                        </div>
+                    </div>
+
+                    <div class="input-group full-width">
+                        <div class="textarea-wrapper">
+                            <textarea id="habilidades" rows="3" disabled></textarea>
+                            <label for="habilidades">Descrição da Habilidade</label>
+                        </div>
+                    </div>
+
+                    <div class="input-group full-width">
+                        <div class="textarea-wrapper">
+                            <textarea id="objetivos" rows="3" disabled></textarea>
+                            <label for="objetivos">Objetivos de Aprendizado</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn" disabled>
+                    <span class="btn-text">
+                        <i class="fas fa-magic"></i>
+                        Gerar Plano com IA
+                    </span>
+                    <div class="btn-ripple"></div>
+                </button>
+            </form>
+        </section>
+
+        <!-- Seção de Resultado -->
+        <section id="resultado-section" class="glass-card resultado-section" style="display: none;">
+            <div class="card-header">
+                <div class="header-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <div class="header-text">
+                    <h2>Plano Gerado</h2>
+                    <p>Seu plano de aula personalizado</p>
+                </div>
+            </div>
+
+            <div id="resultado-plano" class="plano-content"></div>
+
+            <div class="plano-actions">
+                <button id="btn-download" class="action-btn primary-btn">
+                    <i class="fas fa-download"></i>
+                    Baixar PDF
+                </button>
+                <button id="btn-salvar" class="action-btn secondary-btn">
+                    <i class="fas fa-save"></i>
+                    Salvar Plano
+                </button>
+            </div>
+        </section>
+
+        <!-- Seção de Histórico -->
+        <section class="glass-card historico-section">
+            <div class="card-header">
+                <div class="header-icon">
+                    <i class="fas fa-history"></i>
+                </div>
+                <div class="header-text">
+                    <h2>Meus Planos Salvos</h2>
+                    <p>Histórico de planos de aula criados</p>
+                </div>
+                <div class="search-wrapper">
+                    <input type="text" id="search-planos" placeholder="Buscar plano...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+
+            <div id="planos-grid" class="planos-grid">
+                <!-- Planos serão carregados dinamicamente -->
+            </div>
+
+            <!-- Empty State -->
+            <div class="empty-state" id="empty-planos" style="display: none;">
+                <div class="empty-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h3>Nenhum plano salvo</h3>
+                <p>Seus planos de aula aparecerão aqui após serem salvos</p>
+            </div>
+        </section>
+
+        <!-- Botão Voltar -->
+        <div class="back-section">
+            <a href="/dashboard" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                Voltar ao Dashboard
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Loading Overlay -->
+<div id="loading-overlay" class="loading-overlay" style="display: none;">
+    <div class="loading-content">
+        <div class="loading-spinner"></div>
+        <p>Gerando plano de aula com IA...</p>
+    </div>
+</div>
+
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+        :root {
+        --primary: #457D97;
+        --secondary: #FFFFFD;
+        --accent: #457D97;
+        --success: #457D97;
+        --warning: #457D97;
+        --danger: #d32f2f;
+        --dark: #457D97;
+        --light: #FFFFFD;
+        --glass: rgba(255, 255, 253, 0.25);
+        --glass-border: rgba(255, 255, 253, 0.18);
+        --shadow: 0 8px 32px 0 rgba(69, 125, 151, 0.37);
+        --text-primary: #457D97;
+        --text-secondary: #6b9bb3;
+    }
+
+        body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        background: linear-gradient(135deg, #457D97 0%, #6b9bb3 50%, #FFFFFD 100%);
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+
+    .main-wrapper {
+        position: relative;
+            min-height: 100vh;
+    }
+
+    .background-shapes {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        overflow: hidden;
+    }
+
+    .shape {
+        position: absolute;
+        border-radius: 50%;
+        background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+        animation: float 6s ease-in-out infinite;
+    }
+
+    .shape-1 {
+        width: 300px;
+        height: 300px;
+        top: 10%;
+        left: 10%;
+        animation-delay: 0s;
+    }
+
+    .shape-2 {
+        width: 200px;
+        height: 200px;
+        top: 60%;
+        right: 10%;
+        animation-delay: 2s;
+    }
+
+    .shape-3 {
+        width: 150px;
+        height: 150px;
+        bottom: 20%;
+        left: 60%;
+        animation-delay: 4s;
+    }
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-20px) rotate(180deg); }
+    }
+
+        .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    /* Header Moderno */
+    .modern-header {
+        text-align: center;
+        margin-bottom: 3rem;
+        animation: slideDown 0.8s ease-out;
+    }
+
+    .header-content {
+        margin-bottom: 2rem;
+    }
+
+    .icon-wrapper {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+            box-shadow: var(--shadow);
+    }
+
+    .icon-wrapper i {
+        font-size: 2.5rem;
+        color: white;
+        }
+
+    .modern-header h1 {
+        font-size: 3rem;
+            font-weight: 700;
+        color: white;
+        margin-bottom: 0.5rem;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .modern-header p {
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: 300;
+    }
+
+    .stats-bar {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        margin-top: 2rem;
+    }
+
+    .stat-item {
+            text-align: center;
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        border-radius: 15px;
+        padding: 1.5rem 2rem;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: var(--shadow);
+        transition: transform 0.3s ease;
+    }
+
+    .stat-item:hover {
+        transform: translateY(-5px);
+    }
+
+    .stat-number {
+        display: block;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: white;
+        line-height: 1;
+    }
+
+    .stat-label {
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.8);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        }
+
+    /* Glass Cards */
+    .glass-card {
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        border-radius: 20px;
+        padding: 2.5rem;
+        margin-bottom: 2rem;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: var(--shadow);
+        animation: slideUp 0.8s ease-out;
+    }
+
+    .card-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        gap: 1rem;
+    }
+
+    .header-icon {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        border-radius: 15px;
+            display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 15px rgba(69, 125, 151, 0.3);
+    }
+
+    .header-icon i {
+        font-size: 1.5rem;
+        color: var(--secondary);
+    }
+
+    .header-text h2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 0.3rem;
+    }
+
+    .header-text p {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 1rem;
+    }
+
+    .search-wrapper {
+        margin-left: auto;
+        position: relative;
+    }
+
+    .search-wrapper input {
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 25px;
+        padding: 0.8rem 1rem 0.8rem 3rem;
+        color: white;
+        font-size: 1rem;
+        width: 250px;
+        transition: all 0.3s ease;
+    }
+
+    .search-wrapper input::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .search-wrapper input:focus {
+        outline: none;
+        background: rgba(255, 255, 255, 0.3);
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .search-wrapper i {
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    /* Formulário Moderno */
+    .modern-form {
+        animation: fadeIn 0.6s ease-out 0.2s both;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .input-group {
+        position: relative;
+    }
+
+    .input-group.full-width {
+        grid-column: 1 / -1;
+    }
+
+    .input-wrapper {
+        position: relative;
+    }
+
+    .input-wrapper input {
+        width: 100%;
+        padding: 1.2rem 1rem 0.8rem;
+        background: rgba(255, 255, 255, 0.9);
+        border: 2px solid transparent;
+        border-radius: 12px;
+        font-size: 1rem;
+        color: var(--text-primary);
+        transition: all 0.3s ease;
+    }
+
+    .input-wrapper input:focus {
+        outline: none;
+        border-color: var(--primary);
+        background: white;
+    }
+
+    .input-wrapper input:disabled {
+        background: rgba(255, 255, 255, 0.5);
+        color: var(--text-secondary);
+    }
+
+    .input-wrapper label {
+        position: absolute;
+        top: 50%;
+        left: 1rem;
+        transform: translateY(-50%);
+        color: var(--text-secondary);
+        font-size: 1rem;
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+
+    .input-wrapper input:focus + label,
+    .input-wrapper input:valid + label,
+    .input-wrapper input:not(:placeholder-shown) + label {
+        top: 0.8rem;
+        font-size: 0.8rem;
+        color: var(--primary);
+        font-weight: 500;
+    }
+
+    /* Select Wrapper */
+    .select-wrapper {
+        position: relative;
+    }
+
+    .select-wrapper select {
+        width: 100%;
+        padding: 1.2rem 3rem 0.8rem 1rem;
+        background: rgba(255, 255, 255, 0.9);
+        border: 2px solid transparent;
+        border-radius: 12px;
+        font-size: 1rem;
+        color: var(--text-primary);
+        appearance: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .select-wrapper select:focus {
+        outline: none;
+        border-color: var(--primary);
+        background: white;
+    }
+
+    .select-wrapper label {
+        position: absolute;
+        top: 0.8rem;
+        left: 1rem;
+        font-size: 0.8rem;
+        color: var(--text-secondary);
+        font-weight: 500;
+        pointer-events: none;
+    }
+
+    .select-arrow {
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--text-secondary);
+        pointer-events: none;
+    }
+
+    /* Textarea Wrapper */
+    .textarea-wrapper {
+        position: relative;
+    }
+
+    .textarea-wrapper textarea {
+        width: 100%;
+        padding: 1.2rem 1rem 0.8rem;
+        background: rgba(255, 255, 255, 0.9);
+        border: 2px solid transparent;
+        border-radius: 12px;
+        font-size: 1rem;
+        color: var(--text-primary);
+        resize: vertical;
+        min-height: 120px;
+        transition: all 0.3s ease;
+        font-family: inherit;
+    }
+
+    .textarea-wrapper textarea:focus {
+        outline: none;
+        border-color: var(--primary);
+        background: white;
+    }
+
+    .textarea-wrapper textarea:disabled {
+        background: rgba(255, 255, 255, 0.5);
+        color: var(--text-secondary);
+    }
+
+    .textarea-wrapper label {
+        position: absolute;
+        top: 0.8rem;
+        left: 1rem;
+        font-size: 0.8rem;
+        color: var(--text-secondary);
+        font-weight: 500;
+        pointer-events: none;
+    }
+
+    /* Habilidade Info */
+    .habilidade-info {
+        margin-top: 1rem;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        border-left: 4px solid var(--primary);
+        color: var(--text-primary);
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    /* Botão Submit */
+    .submit-btn {
+        position: relative;
+        background: linear-gradient(135deg, var(--primary), var(--text-secondary));
+        border: none;
+        border-radius: 15px;
+        padding: 1.2rem 2rem;
+        color: var(--secondary);
+        font-size: 1.1rem;
+            font-weight: 600;
+        cursor: pointer;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(69, 125, 151, 0.4);
+        width: 100%;
+    }
+
+    .submit-btn:hover:not(:disabled) {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(69, 125, 151, 0.6);
+    }
+
+    .submit-btn:disabled {
+        background: rgba(255, 255, 255, 0.3);
+        color: rgba(255, 255, 255, 0.7);
+        cursor: not-allowed;
+        transform: none;
+        box-shadow: none;
+    }
+
+    .btn-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        position: relative;
+        z-index: 2;
+    }
+
+    .btn-ripple {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+        transform: scale(0);
+        transition: transform 0.6s ease;
+    }
+
+    .submit-btn:active .btn-ripple {
+        transform: scale(1);
+    }
+
+    /* Seção de Resultado */
+    .plano-content {
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 15px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        line-height: 1.6;
+        color: var(--text-primary);
+    }
+
+    .plano-content h3 {
+            color: var(--primary);
+        margin: 1.5rem 0 1rem 0;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .plano-content p {
+        margin-bottom: 1rem;
+    }
+
+    .plano-content ul, .plano-content ol {
+        margin-left: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .plano-actions {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .action-btn {
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 12px;
+            font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .primary-btn {
+        background: linear-gradient(135deg, var(--primary), var(--text-secondary));
+        color: white;
+    }
+
+    .secondary-btn {
+        background: linear-gradient(135deg, #28a745, #20c997);
+        color: white;
+    }
+
+    .action-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Grid de Planos */
+    .planos-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+        }
+
+    .plano-card {
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 15px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        cursor: pointer;
+    }
+
+    .plano-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .plano-header {
+        margin-bottom: 1rem;
+    }
+
+    .plano-titulo {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--text-primary);
+        margin-bottom: 0.5rem;
+    }
+
+    .plano-meta {
+            display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+            margin-bottom: 0.5rem;
+        }
+
+    .meta-badge {
+        background: rgba(69, 125, 151, 0.1);
+        color: var(--primary);
+        padding: 0.3rem 0.8rem;
+        border-radius: 15px;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    .plano-data {
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+    }
+
+    .plano-preview {
+        color: var(--text-secondary);
+        line-height: 1.5;
+        margin-bottom: 1rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        }
+
+    .plano-actions-card {
+        display: flex;
+        gap: 0.5rem;
+        justify-content: flex-end;
+    }
+
+    .action-btn-small {
+        padding: 0.5rem 1rem;
+            border: none;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        }
+
+    .view-btn {
+        background: var(--primary);
+        color: white;
+        }
+
+    .download-btn {
+            background: #6c757d;
+        color: white;
+    }
+
+    .action-btn-small:hover {
+        transform: translateY(-2px);
+    }
+
+    /* Empty State */
+    .empty-state {
+        text-align: center;
+        padding: 3rem;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .empty-icon {
+        width: 80px;
+        height: 80px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1rem;
+    }
+
+    .empty-icon i {
+        font-size: 2rem;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .empty-state h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        }
+
+    /* Botão Voltar */
+    .back-section {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .back-btn {
+            display: inline-flex;
+            align-items: center;
+        gap: 0.5rem;
+        color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        padding: 0.8rem 1.5rem;
+        border-radius: 25px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+    .back-btn:hover {
+        color: white;
+        background: rgba(255, 255, 255, 0.2);
+            transform: translateX(-5px);
+        }
+
+    /* Loading Overlay */
+    .loading-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10000;
+        }
+
+    .loading-content {
+        text-align: center;
+        color: white;
+    }
+
+    .loading-spinner {
+        width: 60px;
+        height: 60px;
+        border: 4px solid rgba(255, 255, 255, 0.3);
+        border-top: 4px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        margin: 0 auto 1rem;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+    .loading-content p {
+        font-size: 1.1rem;
+        font-weight: 500;
+        }
+
+    /* Animações */
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+        .container {
+            padding: 1rem;
+        }
+
+        .modern-header h1 {
+            font-size: 2rem;
+        }
+
+        .stats-bar {
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .form-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .card-header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .search-wrapper {
+            margin-left: 0;
+            width: 100%;
+        }
+
+        .search-wrapper input {
+            width: 100%;
+        }
+
+        .planos-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .plano-actions {
+            flex-direction: column;
+        }
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="/js/plano-aula.js"></script>
+    <script>
+        window.userName = "{{ user.user_name|e }}";
+    
+    // Inicialização da página
+    document.addEventListener('DOMContentLoaded', function() {
+        carregarEstatisticas();
+        carregarHistoricoPlanos();
+        configurarBusca();
+        configurarFormulario();
+    });
+
+    // Função para carregar estatísticas
+    function carregarEstatisticas() {
+        // Carregar habilidades
+        fetch('/api/habilidades')
+            .then(response => response.json())
+            .then(data => {
+                const totalHabilidades = data.habilidades ? data.habilidades.length : 0;
+                animarContador('total-habilidades', totalHabilidades);
+            })
+            .catch(error => {
+                console.error('Erro ao carregar habilidades:', error);
+                document.getElementById('total-habilidades').textContent = '0';
+            });
+
+        // Simular carregamento de planos (implementar API se necessário)
+        animarContador('total-planos', 0);
+        animarContador('planos-hoje', 0);
+    }
+
+    // Função para animar contadores
+    function animarContador(elementId, valorFinal) {
+        const elemento = document.getElementById(elementId);
+        if (!elemento) return;
+        
+        const valorInicial = 0;
+        const duracao = 1000;
+        const incremento = valorFinal / (duracao / 16);
+        
+        let valorAtual = valorInicial;
+        
+        const timer = setInterval(() => {
+            valorAtual += incremento;
+            if (valorAtual >= valorFinal) {
+                elemento.textContent = valorFinal;
+                clearInterval(timer);
+            } else {
+                elemento.textContent = Math.floor(valorAtual);
+            }
+        }, 16);
+    }
+
+    // Função para carregar histórico de planos
+    function carregarHistoricoPlanos() {
+        const planosGrid = document.getElementById('planos-grid');
+        const emptyState = document.getElementById('empty-planos');
+        
+        // Implementar carregamento de planos salvos
+        // Por enquanto, mostrar empty state
+        planosGrid.innerHTML = '';
+        emptyState.style.display = 'block';
+    }
+
+    // Configurar busca
+    function configurarBusca() {
+        const searchInput = document.getElementById('search-planos');
+        if (searchInput) {
+            searchInput.addEventListener('input', function(e) {
+                const searchTerm = e.target.value.toLowerCase();
+                const planoCards = document.querySelectorAll('.plano-card');
+                
+                planoCards.forEach(card => {
+                    const titulo = card.querySelector('.plano-titulo').textContent.toLowerCase();
+                    if (titulo.includes(searchTerm)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        }
+    }
+
+    // Configurar formulário
+    function configurarFormulario() {
+        const form = document.getElementById('plano-form');
+        const submitBtn = form.querySelector('button[type="submit"]');
+        
+        // Habilitar botão quando habilidade for selecionada
+        document.getElementById('habilidade').addEventListener('change', function() {
+            if (this.value) {
+                submitBtn.disabled = false;
+            } else {
+                submitBtn.disabled = true;
+            }
+        });
+    }
+
+    // Sistema de Toast
+    function mostrarToast(mensagem, tipo = 'info') {
+        // Remover toast existente
+        const toastExistente = document.querySelector('.toast');
+        if (toastExistente) {
+            toastExistente.remove();
+        }
+
+        const toast = document.createElement('div');
+        toast.className = `toast toast-${tipo}`;
+        toast.innerHTML = `
+            <div class="toast-content">
+                <i class="fas fa-${tipo === 'success' ? 'check-circle' : tipo === 'error' ? 'exclamation-circle' : 'info-circle'}"></i>
+                <span>${mensagem}</span>
+            </div>
+        `;
+
+        // Adicionar estilos inline para o toast
+        toast.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: ${tipo === 'success' ? '#28a745' : tipo === 'error' ? '#dc3545' : '#007bff'};
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            z-index: 10000;
+            animation: slideInRight 0.3s ease-out;
+            font-weight: 500;
+        `;
+
+        document.body.appendChild(toast);
+
+        // Remover após 3 segundos
+        setTimeout(() => {
+            toast.style.animation = 'slideOutRight 0.3s ease-out';
+            setTimeout(() => toast.remove(), 300);
+        }, 3000);
+    }
+    </script>
+{% endblock %}

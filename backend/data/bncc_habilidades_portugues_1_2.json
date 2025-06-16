@@ -1,0 +1,284 @@
+{
+    "habilidades": [
+        {
+            "codigo": "EF01LP01",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Reconhecer que textos são lidos e escritos da esquerda para a direita e de cima para baixo da página."
+        },
+        {
+            "codigo": "EF01LP02",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Escrever, espontaneamente ou por ditado, palavras e frases de forma alfabética – usando letras/grafemas que representem fonemas."
+        },
+        {
+            "codigo": "EF01LP03",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Observar escritas convencionais, comparando-as às suas produções escritas, percebendo semelhanças e diferenças."
+        },
+        {
+            "codigo": "EF01LP04",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Distinguir as letras do alfabeto de outros sinais gráficos."
+        },
+        {
+            "codigo": "EF01LP05",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Reconhecer o sistema de escrita alfabética como representação dos sons da fala."
+        },
+        {
+            "codigo": "EF01LP06",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Segmentar oralmente palavras em sílabas."
+        },
+        {
+            "codigo": "EF01LP07",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Identificar fonemas e sua representação por letras."
+        },
+        {
+            "codigo": "EF01LP08",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Relacionar elementos sonoros (sílabas, fonemas, partes de palavras) com sua representação escrita."
+        },
+        {
+            "codigo": "EF01LP09",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Comparar palavras, identificando semelhanças e diferenças entre sons de sílabas iniciais."
+        },
+        {
+            "codigo": "EF01LP10",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Nomear as letras do alfabeto e recitá-lo na ordem das letras."
+        },
+        {
+            "codigo": "EF01LP11",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Conhecer, diferenciar e relacionar letras em formato imprensa e cursiva, maiúsculas e minúsculas."
+        },
+        {
+            "codigo": "EF01LP12",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Reconhecer a separação das palavras, na escrita, por espaços em branco."
+        },
+        {
+            "codigo": "EF01LP13",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Escrever, espontaneamente ou por ditado, palavras e frases de forma alfabética – usando letras/grafemas que representem fonemas."
+        },
+        {
+            "codigo": "EF01LP14",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Identificar outros sinais no texto além das letras, como pontos finais, de interrogação e exclamação e seus efeitos na entonação."
+        },
+        {
+            "codigo": "EF01LP15",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Agrupar palavras pelo critério de aproximação de significado (sinonímia) e separar palavras pelo critério de oposição de significado (antonímia)."
+        },
+        {
+            "codigo": "EF01LP16",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Ler e compreender, em colaboração com os colegas e com a ajuda do professor, quadras, quadrinhas, parlendas, trava-línguas, dentre outros gêneros do campo da vida cotidiana, considerando a situação comunicativa e o tema/assunto do texto e relacionando sua forma de organização à sua finalidade."
+        },
+        {
+            "codigo": "EF01LP17",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Planejar e produzir, em colaboração com os colegas e com a ajuda do professor, listas, agendas, calendários, avisos, convites, receitas, instruções de montagem e legendas para álbuns, fotos ou ilustrações (digitais ou impressos), dentre outros gêneros do campo da vida cotidiana, considerando a situação comunicativa e o tema/assunto/finalidade do texto."
+        },
+        {
+            "codigo": "EF01LP18",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Registrar, em colaboração com os colegas e com a ajuda do professor, cantigas, quadras, quadrinhas, parlendas, trava-línguas, dentre outros gêneros do campo da vida cotidiana, considerando a situação comunicativa e o tema/assunto/finalidade do texto."
+        },
+        {
+            "codigo": "EF01LP19",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Recitar parlendas, quadras, quadrinhas, trava-línguas, com entonação adequada e observando as rimas."
+        },
+        {
+            "codigo": "EF01LP20",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 1,
+            "descricao": "Identificar e reproduzir, em listas, agendas, calendários, regras, avisos, convites, receitas, instruções de montagem e legendas para álbuns, fotos ou ilustrações (digitais ou impressos), a formatação e diagramação específica de cada um desses gêneros."
+        },
+        {
+            "codigo": "EF02LP01",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Utilizar, ao produzir o texto, grafia correta de palavras conhecidas ou com estruturas silábicas já dominadas, letras maiúsculas em início de frases e em substantivos próprios, segmentação entre as palavras, ponto final, ponto de interrogação e ponto de exclamação."
+        },
+        {
+            "codigo": "EF02LP02",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Segmentar palavras em sílabas e remover e substituir sílabas iniciais, mediais ou finais para criar novas palavras."
+        },
+        {
+            "codigo": "EF02LP03",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Ler e escrever palavras com correspondências regulares diretas entre letras e fonemas (f, v, t, d, p, b) e correspondências regulares contextuais (c e q; e e o, em posição átona em final de palavra)."
+        },
+        {
+            "codigo": "EF02LP04",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Ler e escrever corretamente palavras com sílabas CV, V, CVC, CCV, identificando que existem vogais em todas as sílabas."
+        },
+        {
+            "codigo": "EF02LP05",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Ler e escrever corretamente palavras com marcas de nasalidade (til, m, n)."
+        },
+        {
+            "codigo": "EF02LP06",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Perceber o princípio acrofônico que opera nos nomes das letras do alfabeto."
+        },
+        {
+            "codigo": "EF02LP07",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Escrever palavras, frases, textos curtos nas formas imprensa e cursiva."
+        },
+        {
+            "codigo": "EF02LP08",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Segmentar corretamente as palavras ao escrever frases e textos."
+        },
+        {
+            "codigo": "EF02LP09",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Usar adequadamente ponto final, ponto de interrogação e ponto de exclamação."
+        },
+        {
+            "codigo": "EF02LP10",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Identificar sinônimos de palavras de texto lido, determinando a diferença de sentido entre eles, e formar antônimos de palavras encontradas em texto lido pelo acréscimo do prefixo de negação in-/im-."
+        },
+        {
+            "codigo": "EF02LP11",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Formar o aumentativo e o diminutivo de palavras com os sufixos -ão e -inho/-zinho."
+        },
+        {
+            "codigo": "EF02LP12",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Ler e compreender com certa autonomia cantigas, letras de canção, dentre outros gêneros do campo da vida cotidiana, considerando a situação comunicativa e o tema/assunto do texto e relacionando sua forma de organização à sua finalidade."
+        },
+        {
+            "codigo": "EF02LP13",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Planejar e produzir bilhetes e cartas, em meio impresso e/ou digital, dentre outros gêneros do campo da vida cotidiana, considerando a situação comunicativa e o tema/assunto/finalidade do texto."
+        },
+        {
+            "codigo": "EF02LP14",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Planejar e produzir pequenos relatos de observação de processos, de fatos, de experiências pessoais, mantendo as características do gênero, considerando a situação comunicativa e o tema/assunto do texto."
+        },
+        {
+            "codigo": "EF02LP15",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Cantar cantigas e canções, obedecendo ao ritmo e à melodia."
+        },
+        {
+            "codigo": "EF02LP16",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Identificar e reproduzir, em bilhetes, recados, avisos, cartas, e-mails, receitas (modo de fazer), relatos (digitais ou impressos), a formatação e diagramação específica de cada um desses gêneros."
+        },
+        {
+            "codigo": "EF02LP17",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Executar, em colaboração com os colegas e com a ajuda do professor, tarefas sobre temas de interesse da turma a partir de instruções de montagem de jogos, de brinquedos, de receitas, de experimentos, de cultivos, dentre outros gêneros do campo investigativo, considerando a situação comunicativa e o tema/assunto do texto."
+        },
+        {
+            "codigo": "EF02LP18",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Planejar e produzir cartazes e folhetos para divulgar eventos da escola ou da comunidade, utilizando linguagem persuasiva e elementos textuais e visuais (tamanho da letra, leiaute, imagens) adequados ao gênero, considerando a situação comunicativa e o tema/assunto do texto."
+        },
+        {
+            "codigo": "EF02LP19",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Planejar e produzir, em colaboração com os colegas e com a ajuda do professor, notícias curtas para público infantil, para compor jornal falado que possa ser repassado oralmente ou em meio digital, em áudio ou vídeo, dentre outros gêneros do campo jornalístico, considerando a situação comunicativa e o tema/assunto do texto."
+        },
+        {
+            "codigo": "EF02LP20",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 2,
+            "descricao": "Reconhecer a função de textos utilizados para apresentar informações coletadas em atividades de pesquisa (enquetes, pequenas entrevistas, registros de experimentações)."
+        }
+    ]
+} 

@@ -1,0 +1,144 @@
+{
+    "habilidades": [
+        {
+            "codigo": "EF04LP01",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Grafar palavras utilizando regras de correspondência fonema-grafema regulares diretas e contextuais."
+        },
+        {
+            "codigo": "EF04LP02",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Ler e escrever, corretamente, palavras com sílabas VV e CVV em casos nos quais a combinação VV (ditongo) é reduzida na língua oral (ai, ei, ou)."
+        },
+        {
+            "codigo": "EF04LP03",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Localizar palavras no dicionário para esclarecer significados, reconhecendo o significado mais plausível para o contexto que deu origem à consulta."
+        },
+        {
+            "codigo": "EF04LP04",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Usar acento gráfico (agudo ou circunflexo) em paroxítonas terminadas em -i(s), -l, -n, -r, -ã(s), -ão(s)."
+        },
+        {
+            "codigo": "EF04LP05",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Identificar a função na leitura e usar, adequadamente, na escrita ponto final, de interrogação, de exclamação, dois-pontos e travessão em diálogos (discurso direto), vírgula em enumerações e em separação de vocativo e de aposto."
+        },
+        {
+            "codigo": "EF04LP06",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Identificar em textos e usar na produção textual a concordância entre substantivo ou pronome pessoal e verbo (concordância verbal)."
+        },
+        {
+            "codigo": "EF04LP07",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Identificar em textos e usar na produção textual a concordância entre artigo, substantivo e adjetivo (concordância nominal)."
+        },
+        {
+            "codigo": "EF04LP08",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Reconhecer e grafar, corretamente, palavras derivadas com os sufixos -agem, -oso, -eza, -izar/-isar (regulares morfológicas)."
+        },
+        {
+            "codigo": "EF04LP09",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Ler e compreender, com autonomia, boletos, faturas e carnês, dentre outros gêneros do campo da vida cotidiana, de acordo com as convenções do gênero (campos, itens elencados, medidas de consumo, código de barras) e considerando a situação comunicativa e a finalidade do texto."
+        },
+        {
+            "codigo": "EF04LP10",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Ler e compreender, com autonomia, cartas de reclamação, dentre outros gêneros do campo da vida cotidiana, de acordo com as convenções do gênero carta e considerando a situação comunicativa e o tema/assunto do texto."
+        },
+        {
+            "codigo": "EF04LP11",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Planejar e produzir, com autonomia, cartas de reclamação, dentre outros gêneros do campo da vida cotidiana, de acordo com as convenções do gênero carta e com a finalidade de reclamar, recorrer e reivindicar, considerando a situação comunicativa e o tema/assunto do texto."
+        },
+        {
+            "codigo": "EF04LP12",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Assistir, em vídeo digital, a telejornal infantil e, a partir dele, tecer comentários orais sobre o assunto em pauta, assumindo posição de leitor crítico."
+        },
+        {
+            "codigo": "EF04LP13",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Identificar e reproduzir, em textos injuntivos instrucionais (instruções de jogos digitais ou impressos), a formatação própria desses textos (verbos imperativos, indicação de passos a ser seguidos) e formato específico dos textos orais ou escritos desses gêneros (lista/ apresentação de materiais e instruções/passos de jogo)."
+        },
+        {
+            "codigo": "EF04LP14",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Identificar, em notícias, fatos, participantes, local e momento/tempo da ocorrência do fato noticiado."
+        },
+        {
+            "codigo": "EF04LP15",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Distinguir fatos de opiniões/sugestões em textos (informativos, jornalísticos, publicitários etc.)."
+        },
+        {
+            "codigo": "EF04LP16",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Produzir notícias sobre fatos ocorridos no universo escolar, digitais ou impressas, para o jornal da escola, noticiando os fatos e seus atores e comentando decorrências, de acordo com as convenções do gênero notícia e considerando a situação comunicativa e a finalidade do texto."
+        },
+        {
+            "codigo": "EF04LP17",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Produzir jornais radiofônicos ou televisivos e entrevistas veiculadas em rádio, TV e na internet, orientando-se por roteiro ou texto e demonstrando conhecimento dos gêneros jornal falado/televisivo e entrevista."
+        },
+        {
+            "codigo": "EF04LP18",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Analisar o padrão entonacional e a expressão facial e corporal de âncoras de jornais radiofônicos ou televisivos e de entrevistadores/entrevistados."
+        },
+        {
+            "codigo": "EF04LP19",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Ler e compreender textos expositivos de divulgação científica para crianças, considerando a situação comunicativa e o tema/assunto do texto."
+        },
+        {
+            "codigo": "EF04LP20",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Reconhecer a função de gráficos, diagramas e tabelas em textos, como forma de apresentação de dados e informações."
+        }
+    ]
+} 

@@ -1,0 +1,144 @@
+{
+    "habilidades": [
+        {
+            "codigo": "EF08MA01",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Efetuar cálculos com potências de expoentes inteiros e aplicar esse conhecimento na representação de números em notação científica."
+        },
+        {
+            "codigo": "EF08MA02",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Resolver e elaborar problemas usando a relação entre potenciação e radiciação, para representar uma raiz como potência de expoente fracionário."
+        },
+        {
+            "codigo": "EF08MA03",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Resolver e elaborar problemas de contagem cuja resolução envolva a aplicação do princípio multiplicativo."
+        },
+        {
+            "codigo": "EF08MA04",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Resolver e elaborar problemas, envolvendo cálculo de porcentagens, incluindo o uso de tecnologias digitais."
+        },
+        {
+            "codigo": "EF08MA05",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Reconhecer e utilizar procedimentos para a obtenção de uma fração geratriz para uma dízima periódica."
+        },
+        {
+            "codigo": "EF08MA06",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Aplicar as propriedades da igualdade para verificar a equivalência entre expressões algébricas e identificar expressões equivalentes."
+        },
+        {
+            "codigo": "EF08MA07",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Associar uma equação linear de 1º grau com duas incógnitas a uma reta no plano cartesiano."
+        },
+        {
+            "codigo": "EF08MA08",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Resolver e elaborar problemas que possam ser representados por sistemas de equações de 1º grau com duas incógnitas e interpretá-los, utilizando, inclusive, o plano cartesiano como recurso."
+        },
+        {
+            "codigo": "EF08MA09",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Resolver e elaborar, com e sem uso de tecnologias, problemas que possam ser representados por equações polinomiais de 2º grau do tipo ax² = b."
+        },
+        {
+            "codigo": "EF08MA10",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Identificar a regularidade de uma sequência numérica ou figural não recursiva e determinar elementos faltantes ou seguintes."
+        },
+        {
+            "codigo": "EF08MA11",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Identificar a regularidade de uma sequência numérica recursiva e determinar elementos faltantes ou seguintes."
+        },
+        {
+            "codigo": "EF08MA12",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Identificar a natureza da variação de duas grandezas, diretamente, inversamente proporcionais ou não proporcionais, expressando a relação existente por meio de sentença algébrica e representá-la em gráfico cartesiano."
+        },
+        {
+            "codigo": "EF08MA13",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Resolver e elaborar problemas que envolvam grandezas diretamente proporcionais e inversamente proporcionais."
+        },
+        {
+            "codigo": "EF08MA14",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Demonstrar propriedades de quadriláteros por meio da identificação da congruência de triângulos."
+        },
+        {
+            "codigo": "EF08MA15",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Construir, utilizando instrumentos de desenho ou softwares de geometria dinâmica, mediatriz, bissetriz, ângulos de 90°, 60°, 45° e 30° e polígonos regulares."
+        },
+        {
+            "codigo": "EF08MA16",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Demonstrar propriedades de quadriláteros por meio da identificação da congruência de triângulos."
+        },
+        {
+            "codigo": "EF08MA17",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Aplicar os conceitos de volume e capacidade, na resolução de problemas do cotidiano."
+        },
+        {
+            "codigo": "EF08MA18",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Reconhecer e construir figuras obtidas por composições de transformações geométricas (translação, reflexão, rotação, homotetia), com o uso de instrumentos de desenho ou de softwares de geometria dinâmica."
+        },
+        {
+            "codigo": "EF08MA19",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Resolver e elaborar problemas que envolvam medidas de área de figuras geométricas, utilizando expressões de cálculo de área (quadriláteros, triângulos e círculos), em situações como determinar medida de terrenos."
+        },
+        {
+            "codigo": "EF08MA20",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Reconhecer, nomear e comparar polígonos, considerando lados, vértices e ângulos, e classificá-los em regulares e não regulares, tanto em suas representações no plano quanto em faces de poliedros."
+        }
+    ]
+} 

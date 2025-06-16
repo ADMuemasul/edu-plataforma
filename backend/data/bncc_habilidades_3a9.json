@@ -1,0 +1,144 @@
+{
+    "habilidades": [
+        {
+            "codigo": "EF03MA01",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Ler, escrever e comparar números naturais de até a ordem de unidade de milhar, estabelecendo relações entre os registros numéricos e em língua materna."
+        },
+        {
+            "codigo": "EF03MA02",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Identificar características do sistema de numeração decimal, utilizando a composição e a decomposição de número natural de até quatro ordens."
+        },
+        {
+            "codigo": "EF03MA03",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Construir e utilizar fatos básicos da adição e da multiplicação para o cálculo mental ou escrito."
+        },
+        {
+            "codigo": "EF03MA04",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Estabelecer a relação entre números naturais e pontos da reta numérica para utilizá-la na ordenação dos números naturais e também na construção de fatos da adição e da subtração, relacionando-os com deslocamentos para a direita ou para a esquerda."
+        },
+        {
+            "codigo": "EF03MA05",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Utilizar diferentes procedimentos de cálculo mental e escrito para resolver problemas significativos envolvendo adição e subtração com números naturais."
+        },
+        {
+            "codigo": "EF03MA06",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Resolver e elaborar problemas de adição e subtração com os significados de juntar, acrescentar, separar, retirar, comparar e completar quantidades, utilizando diferentes estratégias de cálculo exato e aproximado, incluindo cálculo mental."
+        },
+        {
+            "codigo": "EF03MA07",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Resolver e elaborar problemas de multiplicação (por 2, 3, 4, 5 e 10) com os significados de adição de parcelas iguais e elementos apresentados em disposição retangular, utilizando diferentes estratégias de cálculo e registros."
+        },
+        {
+            "codigo": "EF03MA08",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Resolver e elaborar problemas de divisão de um número natural por outro (até 10), com resto zero e com resto diferente de zero, com os significados de repartição equitativa e de medida, por meio de estratégias e registros pessoais."
+        },
+        {
+            "codigo": "EF03MA09",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Associar o quociente de uma divisão com resto zero de um número natural por 2, 3, 4, 5 e 10 às ideias de metade, terça, quarta, quinta e décima partes."
+        },
+        {
+            "codigo": "EF03MA10",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Identificar regularidades em sequências ordenadas de números naturais, resultantes da realização de adições ou subtrações sucessivas, por um mesmo número, descrevendo uma regra de formação da sequência numérica e planejando uma forma de registro para expressá-la."
+        },
+        {
+            "codigo": "EF03MA11",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Compreender a ideia de igualdade para escrever diferentes sentenças de adições ou de subtrações de dois números naturais que resultem na mesma soma ou diferença."
+        },
+        {
+            "codigo": "EF03MA12",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Identificar e descrever regularidades em sequências numéricas compostas por múltiplos de um número natural."
+        },
+        {
+            "codigo": "EF03MA13",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Identificar e representar frações (menores e maiores que a unidade), associando-as ao resultado de uma divisão ou à ideia de parte de um todo, utilizando a reta numérica como recurso."
+        },
+        {
+            "codigo": "EF03MA14",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Reconhecer e nomear frações próprias, impróprias e aparentes, do tipo m/n, em que m é múltiplo de n, com denominadores 2, 3, 4, 5, 6, 8, 10, 100 e 1000, em situações de partilha, em que a unidade é contínua."
+        },
+        {
+            "codigo": "EF03MA15",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Identificar e comparar frações próprias e impróprias, em situações de partilha, em que a unidade é contínua."
+        },
+        {
+            "codigo": "EF03MA16",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Identificar e comparar frações próprias e impróprias, em situações de partilha, em que a unidade é contínua."
+        },
+        {
+            "codigo": "EF03MA17",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Identificar e comparar frações próprias e impróprias, em situações de partilha, em que a unidade é contínua."
+        },
+        {
+            "codigo": "EF03MA18",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Identificar e comparar frações próprias e impróprias, em situações de partilha, em que a unidade é contínua."
+        },
+        {
+            "codigo": "EF03MA19",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Identificar e comparar frações próprias e impróprias, em situações de partilha, em que a unidade é contínua."
+        },
+        {
+            "codigo": "EF03MA20",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Identificar e comparar frações próprias e impróprias, em situações de partilha, em que a unidade é contínua."
+        }
+    ]
+} 

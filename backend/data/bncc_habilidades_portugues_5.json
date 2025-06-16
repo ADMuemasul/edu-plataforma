@@ -1,0 +1,144 @@
+{
+    "habilidades": [
+        {
+            "codigo": "EF05LP01",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Grafar palavras utilizando regras de correspondência fonema-grafema regulares, contextuais e morfológicas e palavras de uso frequente com correspondências irregulares."
+        },
+        {
+            "codigo": "EF05LP02",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Identificar o caráter polissêmico das palavras (uma mesma palavra com diferentes significados, de acordo com o contexto de uso), comparando o significado de determinados termos utilizados nas áreas científicas com esses mesmos termos utilizados na linguagem usual."
+        },
+        {
+            "codigo": "EF05LP03",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Acentuar corretamente palavras oxítonas, paroxítonas e proparoxítonas."
+        },
+        {
+            "codigo": "EF05LP04",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Diferenciar, na leitura de textos, vírgula, ponto e vírgula, dois-pontos e reconhecer, na leitura de textos, o efeito de sentido que decorre do uso de reticências, aspas, parênteses."
+        },
+        {
+            "codigo": "EF05LP05",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Identificar a expressão de presente, passado e futuro em tempos verbais do modo indicativo."
+        },
+        {
+            "codigo": "EF05LP06",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Flexionar, adequadamente, na escrita e na oralidade, os verbos em concordância com pronomes pessoais/nomes sujeitos da oração."
+        },
+        {
+            "codigo": "EF05LP07",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Identificar, em textos, o uso de conjunções e a relação que estabelecem entre partes do texto: adição, oposição, tempo, causa, condição, finalidade."
+        },
+        {
+            "codigo": "EF05LP08",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Diferenciar palavras primitivas, derivadas e compostas, e derivadas por adição de prefixo e de sufixo."
+        },
+        {
+            "codigo": "EF05LP09",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Ler e compreender, com autonomia, textos instrucionais de regras de jogo, dentre outros gêneros do campo da vida cotidiana, de acordo com as convenções do gênero e considerando a situação comunicativa e a finalidade do texto."
+        },
+        {
+            "codigo": "EF05LP10",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Ler e compreender, com autonomia, anedotas, piadas e cartuns, dentre outros gêneros do campo da vida cotidiana, de acordo com as convenções do gênero e considerando a situação comunicativa e a finalidade do texto."
+        },
+        {
+            "codigo": "EF05LP11",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Registrar, com autonomia, anedotas, piadas e cartuns, dentre outros gêneros do campo da vida cotidiana, de acordo com as convenções do gênero e considerando a situação comunicativa e a finalidade do texto."
+        },
+        {
+            "codigo": "EF05LP12",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Planejar e produzir, com autonomia, textos instrucionais de regras de jogo, dentre outros gêneros do campo da vida cotidiana, de acordo com as convenções do gênero e considerando a situação comunicativa e a finalidade do texto."
+        },
+        {
+            "codigo": "EF05LP13",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Assistir, em vídeo digital, a postagem de vlog infantil de críticas de brinquedos e livros de literatura infantil e, a partir dele, planejar e produzir resenhas digitais de livros ou produtos de interesse da criança."
+        },
+        {
+            "codigo": "EF05LP14",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Identificar e reproduzir, em textos de resenha crítica de brinquedos ou livros de literatura infantil, a formatação própria desses textos (apresentação e avaliação do produto)."
+        },
+        {
+            "codigo": "EF05LP15",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Ler/assistir e compreender, com autonomia, notícias, reportagens, vídeos em vlogs argumentativos, dentre outros gêneros do campo político-cidadão, de acordo com as convenções dos gêneros e considerando a situação comunicativa e o tema/assunto do texto."
+        },
+        {
+            "codigo": "EF05LP16",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Comparar informações sobre um mesmo fato veiculadas em diferentes mídias e concluir sobre qual é mais confiável e por quê."
+        },
+        {
+            "codigo": "EF05LP17",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Produzir roteiro para edição de uma reportagem digital sobre temas de interesse da turma, a partir de buscas de informações, imagens, áudios e vídeos na internet, tendo em vista as convenções do gênero e considerando a situação comunicativa e o tema/assunto do texto."
+        },
+        {
+            "codigo": "EF05LP18",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Roteirizar, produzir e editar vídeo para vlogs argumentativos sobre produtos de mídia para público infantil (filmes, desenhos animados, HQs, games etc.), com base em conhecimentos sobre os mesmos, de acordo com as convenções do gênero e considerando a situação comunicativa e o tema/assunto/finalidade do texto."
+        },
+        {
+            "codigo": "EF05LP19",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Argumentar oralmente sobre acontecimentos de interesse social, com base em conhecimentos sobre fatos divulgados em TV, rádio, mídia impressa e digital, respeitando pontos de vista diferentes."
+        },
+        {
+            "codigo": "EF05LP20",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 5,
+            "descricao": "Analisar a validade e força de argumentos em argumentações sobre produtos de mídia para público infantil (filmes, desenhos animados, HQs, games etc.), com base em conhecimentos sobre os mesmos."
+        }
+    ]
+} 

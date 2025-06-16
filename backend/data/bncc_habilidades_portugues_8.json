@@ -1,0 +1,144 @@
+{
+    "habilidades": [
+        {
+            "codigo": "EF08LP01",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Identificar e comparar as várias editorias de jornais impressos e digitais e de sites noticiosos, de forma a refletir sobre os tipos de fato que são noticiados e comentados, as escolhas sobre o que noticiar e o que não noticiar e o destaque/enfoque dado e a fidedignidade da informação."
+        },
+        {
+            "codigo": "EF08LP02",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Justificar diferenças ou semelhanças no tratamento dado a uma mesma informação veiculada em textos diferentes, consultando sites e serviços de checadores de fatos."
+        },
+        {
+            "codigo": "EF08LP03",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Formar, com base em palavras primitivas, palavras derivadas com os prefixos e sufixos mais produtivos no português."
+        },
+        {
+            "codigo": "EF08LP04",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Utilizar, ao produzir texto, conhecimentos linguísticos e gramaticais: regras sintáticas de concordância nominal e verbal, convenções de escrita de diálogos (discurso direto, indireto e indireto livre), pontuação (ponto-e-vírgula, dois-pontos, aspas, reticências), regras ortográficas."
+        },
+        {
+            "codigo": "EF08LP05",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Analisar processos de formação de palavras por composição (aglutinação e justaposição), apropriando-se de regras básicas de uso do hífen em palavras compostas."
+        },
+        {
+            "codigo": "EF08LP06",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Identificar, em textos lidos ou de produção própria, os termos constitutivos da oração (sujeito e seus modificadores, verbo e seus complementos e modificadores)."
+        },
+        {
+            "codigo": "EF08LP07",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Diferenciar, em textos lidos ou de produção própria, complementos diretos e indiretos de verbos transitivos, apropriando-se da regência de verbos de uso frequente."
+        },
+        {
+            "codigo": "EF08LP08",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Identificar, em textos lidos ou de produção própria, verbos na voz ativa e na voz passiva, interpretando os efeitos de sentido de sujeito ativo e passivo."
+        },
+        {
+            "codigo": "EF08LP09",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Interpretar efeitos de sentido de modificadores (adjuntos adnominais – artigos definido ou indefinido, adjetivos, expressões adjetivas) em substantivos com função de sujeito ou de complemento verbal, usando-os para enriquecer seus próprios textos."
+        },
+        {
+            "codigo": "EF08LP10",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Interpretar, em textos lidos ou de produção própria, efeitos de sentido de modificadores do verbo (adjuntos adverbiais – advérbios e expressões adverbiais), usando-os para enriquecer seus próprios textos."
+        },
+        {
+            "codigo": "EF08LP11",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Identificar, em textos lidos ou de produção própria, agrupamento de orações em períodos, diferenciando coordenação de subordinação."
+        },
+        {
+            "codigo": "EF08LP12",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Identificar, em textos lidos, orações subordinadas com conjunções de uso frequente, incorporando-as às suas próprias produções."
+        },
+        {
+            "codigo": "EF08LP13",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Inferir efeitos de sentido decorrentes do uso de recursos de coesão sequencial: conjunções e articuladores textuais."
+        },
+        {
+            "codigo": "EF08LP14",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Utilizar, ao produzir texto, recursos de coesão sequencial (articuladores) e referencial (anáforas e catáforas), construções passivas e impessoais, discurso direto e indireto e outros recursos expressivos adequados ao gênero textual."
+        },
+        {
+            "codigo": "EF08LP15",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Estabelecer relações entre partes do texto, identificando o antecedente de um pronome relativo ou o referente comum de uma cadeia de substituições lexicais."
+        },
+        {
+            "codigo": "EF08LP16",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Explicar os efeitos de sentido do uso, em textos, de estratégias de modalização e argumentatividade (sinais de pontuação, adjetivos, substantivos, expressões de grau, verbos e perífrases verbais, advérbios etc.)."
+        },
+        {
+            "codigo": "EF08LP17",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Avaliar repertório de leituras para curadoria de informação, tendo em vista diferentes propósitos e projetos discursivos."
+        },
+        {
+            "codigo": "EF08LP18",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Utilizar, ao produzir texto, recursos de modalização adequados aos textos em que tais recursos se fazem necessários."
+        },
+        {
+            "codigo": "EF08LP19",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Analisar, em textos argumentativos, reivindicatórios e propositivos, os movimentos argumentativos de sustentação, refutação e negociação e os tipos de argumentos, avaliando a força/tipo dos argumentos utilizados."
+        },
+        {
+            "codigo": "EF08LP20",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 8,
+            "descricao": "Comparar propostas políticas e de solução de problemas, identificando o que se pretende fazer/implementar, por que (motivações, justificativas), para que (objetivos, benefícios e consequências esperados), como (ações e passos), quando etc. e a forma de avaliar a eficácia da proposta/solução, contrastando dados e informações de diferentes fontes, identificando coincidências, complementaridades e contradições, de forma a poder compreender e posicionar-se criticamente sobre os dados e informações usados em fundamentação de propostas e analisar a coerência entre os elementos, de forma a tomar decisões fundamentadas."
+        }
+    ]
+} 

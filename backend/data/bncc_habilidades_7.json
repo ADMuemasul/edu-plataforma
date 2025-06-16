@@ -1,0 +1,144 @@
+{
+    "habilidades": [
+        {
+            "codigo": "EF07MA01",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Resolver e elaborar problemas com números naturais, envolvendo as noções de divisor e de múltiplo, podendo incluir máximo divisor comum ou mínimo múltiplo comum, por meio de estratégias diversas, sem a aplicação de algoritmos."
+        },
+        {
+            "codigo": "EF07MA02",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Resolver e elaborar problemas que envolvam porcentagens, como os que lidam com acréscimos e decréscimos simples, utilizando estratégias pessoais, cálculo mental e calculadora, no contexto de educação financeira, entre outros."
+        },
+        {
+            "codigo": "EF07MA03",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Comparar e ordenar números inteiros em diferentes contextos, incluindo o histórico, associá-los a pontos da reta numérica e utilizá-los em situações que envolvam adição e subtração."
+        },
+        {
+            "codigo": "EF07MA04",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Resolver e elaborar problemas que envolvam operações com números inteiros."
+        },
+        {
+            "codigo": "EF07MA05",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Representar por meio de um fluxograma os passos utilizados para resolver um grupo de problemas."
+        },
+        {
+            "codigo": "EF07MA06",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Reconhecer que os números racionais admitem diferentes representações (fracionárias e decimais), relacionando-as a pontos na reta numérica."
+        },
+        {
+            "codigo": "EF07MA07",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Representar por meio de um fluxograma os passos utilizados para resolver um grupo de problemas."
+        },
+        {
+            "codigo": "EF07MA08",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Converter fração em número decimal e vice-versa."
+        },
+        {
+            "codigo": "EF07MA09",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Utilizar, na resolução de problemas, a associação entre razão e fração, como a fração 2/3 para expressar a razão de duas partes de uma grandeza para três partes da mesma ou três partes de outra grandeza."
+        },
+        {
+            "codigo": "EF07MA10",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Resolver e elaborar problemas que envolvam operações com números inteiros."
+        },
+        {
+            "codigo": "EF07MA11",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Compreender e utilizar a notação científica para representar números em contextos que envolvam números muito grandes ou muito pequenos."
+        },
+        {
+            "codigo": "EF07MA12",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Resolver e elaborar problemas que envolvam as operações com números racionais."
+        },
+        {
+            "codigo": "EF07MA13",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Compreender a ideia de variável, representada por letra ou símbolo, para expressar relação entre duas grandezas, diferenciando-a da ideia de incógnita."
+        },
+        {
+            "codigo": "EF07MA14",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Classificar sequências em recursivas e não recursivas, reconhecendo que o conceito de recursão está presente não apenas na matemática, mas também nas artes e na literatura."
+        },
+        {
+            "codigo": "EF07MA15",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Construir e interpretar tabelas e gráficos de setores na resolução de problemas."
+        },
+        {
+            "codigo": "EF07MA16",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Aplicar a associação entre razão e fração como operador multiplicativo na resolução e elaboração de problemas do cotidiano."
+        },
+        {
+            "codigo": "EF07MA17",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Resolver e elaborar problemas que envolvam variação de proporcionalidade direta e de proporcionalidade inversa entre duas grandezas, utilizando sentença algébrica para expressar a relação entre elas."
+        },
+        {
+            "codigo": "EF07MA18",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Resolver e elaborar problemas que possam ser representados por equações polinomiais de 1º grau, redutíveis à forma ax + b = c, fazendo uso das propriedades da igualdade."
+        },
+        {
+            "codigo": "EF07MA19",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Resolver e elaborar problemas que possam ser representados por inequações do tipo ax + b > c ou ax + b < c, fazendo uso das propriedades da desigualdade."
+        },
+        {
+            "codigo": "EF07MA20",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Reconhecer e representar, no plano cartesiano, o simétrico de figuras em relação aos eixos e à origem."
+        }
+    ]
+} 

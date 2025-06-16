@@ -1,0 +1,144 @@
+{
+    "habilidades": [
+        {
+            "codigo": "EF04MA01",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Ler, escrever e ordenar números naturais até a ordem de dezenas de milhar."
+        },
+        {
+            "codigo": "EF04MA02",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Mostrar, por decomposição e composição, que todo número natural pode ser escrito por meio de adições e multiplicações por potências de 10, para compreender o sistema de numeração decimal e desenvolver estratégias de cálculo."
+        },
+        {
+            "codigo": "EF04MA03",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Resolver e elaborar problemas com números naturais envolvendo adição e subtração, utilizando estratégias diversas, como cálculo por estimativa, cálculo mental e algoritmos."
+        },
+        {
+            "codigo": "EF04MA04",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Utilizar as relações entre adição e subtração, bem como entre multiplicação e divisão, para ampliar as estratégias de cálculo."
+        },
+        {
+            "codigo": "EF04MA05",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Utilizar as propriedades das operações para desenvolver estratégias de cálculo."
+        },
+        {
+            "codigo": "EF04MA06",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Resolver e elaborar problemas envolvendo diferentes significados da multiplicação (adição de parcelas iguais, organização retangular e proporcionalidade), utilizando estratégias diversas, como cálculo por estimativa, cálculo mental e algoritmos."
+        },
+        {
+            "codigo": "EF04MA07",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Resolver e elaborar problemas de divisão cujo divisor tenha no máximo dois algarismos, envolvendo os significados de repartição equitativa e de medida, utilizando estratégias diversas, como cálculo por estimativa, cálculo mental e algoritmos."
+        },
+        {
+            "codigo": "EF04MA08",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Resolver, com o suporte de imagem e/ou material manipulável, problemas simples de contagem, como a determinação do número de agrupamentos possíveis ao se combinar cada elemento de uma coleção com todos os elementos de outra, utilizando estratégias e formas de registro pessoais."
+        },
+        {
+            "codigo": "EF04MA09",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Reconhecer as frações unitárias mais usuais (1/2, 1/3, 1/4, 1/5, 1/10 e 1/100) como unidades de medida menores que uma unidade, utilizando a reta numérica como recurso."
+        },
+        {
+            "codigo": "EF04MA10",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Reconhecer que as regras do sistema de numeração decimal podem ser estendidas para a representação decimal de um número racional e relacionar décimos e centésimos com a representação do sistema monetário brasileiro."
+        },
+        {
+            "codigo": "EF04MA11",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Identificar e representar frações (menores e maiores que a unidade), associando-as ao resultado de uma divisão ou à ideia de parte de um todo, utilizando a reta numérica como recurso."
+        },
+        {
+            "codigo": "EF04MA12",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Reconhecer que as regras do sistema de numeração decimal podem ser estendidas para a representação decimal de um número racional e relacionar décimos e centésimos com a representação do sistema monetário brasileiro."
+        },
+        {
+            "codigo": "EF04MA13",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Reconhecer, por meio de investigações, que há grupos de números naturais para os quais as divisões por um determinado número resultam em restos iguais, identificando regularidades."
+        },
+        {
+            "codigo": "EF04MA14",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Reconhecer e mostrar, por meio de exemplos, que a relação de igualdade existente entre dois termos permanece ao adicionar ou subtrair um mesmo número a cada um desses termos."
+        },
+        {
+            "codigo": "EF04MA15",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Determinar o número desconhecido que torna verdadeira uma igualdade que envolve as operações fundamentais com números naturais."
+        },
+        {
+            "codigo": "EF04MA16",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Determinar o número desconhecido que torna verdadeira uma igualdade que envolve as operações fundamentais com números naturais."
+        },
+        {
+            "codigo": "EF04MA17",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Determinar o número desconhecido que torna verdadeira uma igualdade que envolve as operações fundamentais com números naturais."
+        },
+        {
+            "codigo": "EF04MA18",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Determinar o número desconhecido que torna verdadeira uma igualdade que envolve as operações fundamentais com números naturais."
+        },
+        {
+            "codigo": "EF04MA19",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Determinar o número desconhecido que torna verdadeira uma igualdade que envolve as operações fundamentais com números naturais."
+        },
+        {
+            "codigo": "EF04MA20",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 4,
+            "descricao": "Determinar o número desconhecido que torna verdadeira uma igualdade que envolve as operações fundamentais com números naturais."
+        }
+    ]
+} 

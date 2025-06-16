@@ -1,0 +1,193 @@
+{
+    "habilidades": [
+        {
+            "codigo": "EF03LP01",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Ler e escrever palavras com correspondências regulares contextuais entre grafemas e fonemas – c/qu; g/gu; r/rr; s/ss; o (e não u) e e (e não i) em sílaba átona em final de palavra – e com marcas de nasalidade (til, m, n)."
+        },
+        {
+            "codigo": "EF03LP02",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Ler e escrever corretamente palavras com sílabas CV, V, CVC, CCV, VC, VV, CVV, identificando que existem vogais em todas as sílabas."
+        },
+        {
+            "codigo": "EF03LP03",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Ler e escrever corretamente palavras com os dígrafos lh, nh, ch."
+        },
+        {
+            "codigo": "EF03LP04",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Usar acento gráfico (agudo ou circunflexo) em monossílabos tônicos terminados em a, e, o e em palavras oxítonas terminadas em a, e, o, seguidas ou não de s."
+        },
+        {
+            "codigo": "EF03LP05",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Identificar o número de sílabas de palavras, classificando-as em monossílabas, dissílabas, trissílabas e polissílabas."
+        },
+        {
+            "codigo": "EF03LP06",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Identificar a sílaba tônica em palavras, classificando-as em oxítonas, paroxítonas e proparoxítonas."
+        },
+        {
+            "codigo": "EF03LP07",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Identificar a função na leitura e usar na escrita ponto final, ponto de interrogação, ponto de exclamação e, em diálogos (discurso direto), dois-pontos e travessão."
+        },
+        {
+            "codigo": "EF03LP08",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Identificar e diferenciar, em textos, substantivos e verbos e suas funções na oração: agente, ação, objeto da ação."
+        },
+        {
+            "codigo": "EF03LP09",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Identificar, em textos, adjetivos e sua função de atribuição de propriedades aos substantivos."
+        },
+        {
+            "codigo": "EF03LP10",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Reconhecer prefixos e sufixos produtivos na formação de palavras derivadas de substantivos, de adjetivos e de verbos, utilizando-os para compreender palavras e para formar novas palavras."
+        },
+        {
+            "codigo": "EF03LP11",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Ler e compreender, com autonomia, textos injuntivos instrucionais (receitas, instruções de montagem etc.), com a estrutura própria desses textos (verbos imperativos, indicação de passos a ser seguidos) e mesclando palavras, imagens e recursos gráfico-visuais, considerando a situação comunicativa e o tema/assunto do texto."
+        },
+        {
+            "codigo": "EF03LP12",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Ler e compreender, com autonomia, cartas pessoais e diários, com expressão de sentimentos e opiniões, dentre outros gêneros do campo da vida cotidiana, de acordo com as convenções do gênero carta e considerando a situação comunicativa e o tema/assunto do texto."
+        },
+        {
+            "codigo": "EF03LP13",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Planejar e produzir cartas pessoais e diários, com expressão de sentimentos e opiniões, dentre outros gêneros do campo da vida cotidiana, de acordo com as convenções dos gêneros carta e diário e considerando a situação comunicativa e o tema/assunto do texto."
+        },
+        {
+            "codigo": "EF03LP14",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Planejar e produzir textos injuntivos instrucionais, com a estrutura própria desses textos (verbos imperativos, indicação de passos a ser seguidos) e mesclando palavras, imagens e recursos gráfico-visuais, considerando a situação comunicativa e o tema/assunto do texto."
+        },
+        {
+            "codigo": "EF03LP15",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Assistir, em vídeo digital, a programa de culinária infantil e, a partir dele, planejar e produzir receitas em áudio ou vídeo."
+        },
+        {
+            "codigo": "EF03LP16",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Identificar e reproduzir, em textos injuntivos instrucionais (receitas, instruções de montagem, digitais ou impressos), a formatação própria desses textos (verbos imperativos, indicação de passos a ser seguidos) e a diagramação específica dos textos desses gêneros (lista de ingredientes ou materiais e instruções de execução – modo de fazer)."
+        },
+        {
+            "codigo": "EF03LP17",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Identificar e reproduzir, em gêneros epistolares (cartas pessoais e diários), a formatação própria desses textos (relatos de acontecimentos, expressão de vivências, emoções, opiniões ou críticas) e a diagramação específica dos textos desses gêneros (data, saudação, corpo do texto, despedida, assinatura)."
+        },
+        {
+            "codigo": "EF03LP18",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Ler e compreender, com autonomia, relatos de observações e de pesquisas em fontes de informações, considerando a situação comunicativa e o tema/assunto do texto."
+        },
+        {
+            "codigo": "EF03LP19",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Identificar e discutir o propósito do uso de recursos de persuasão (cores, imagens, escolha de palavras, jogo de palavras, tamanho de letras) em textos publicitários e de propaganda, como elementos de convencimento."
+        },
+        {
+            "codigo": "EF03LP20",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Produzir cartas dirigidas a veículos da mídia impressa ou digital (cartas de leitor ou de reclamação a jornais, revistas), dentre outros gêneros do campo político-cidadão, com opiniões e críticas, de acordo com as convenções do gênero carta e considerando a situação comunicativa e o tema/assunto do texto."
+        },
+        {
+            "codigo": "EF03LP21",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Produzir anúncios publicitários, textos de campanhas de conscientização destinados ao público infantil, observando os recursos de persuasão utilizados nos textos publicitários e de propaganda (cores, imagens, slogan, escolha de palavras, jogo de palavras, tamanho e tipo de letras, diagramação)."
+        },
+        {
+            "codigo": "EF03LP22",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Planejar e produzir, em colaboração com os colegas, telejornal para público infantil com algumas notícias e textos de campanhas que possam ser repassados oralmente ou em meio digital, em áudio ou vídeo, considerando a situação comunicativa, a organização específica da fala nesses gêneros e o tema/assunto/finalidade dos textos."
+        },
+        {
+            "codigo": "EF03LP23",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Analisar o uso de adjetivos em cartas dirigidas a veículos da mídia impressa ou digital (cartas do leitor ou de reclamação a jornais ou revistas), digitais ou impressas."
+        },
+        {
+            "codigo": "EF03LP24",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Ler/ouvir e compreender, com autonomia, relatos de observações e de pesquisas em fontes de informações, considerando a situação comunicativa e o tema/assunto do texto."
+        },
+        {
+            "codigo": "EF03LP25",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Planejar e produzir textos para apresentar resultados de observações e de pesquisas em fontes de informações, incluindo, quando pertinente, imagens, diagramas e gráficos ou tabelas simples, considerando a situação comunicativa e o tema/assunto do texto."
+        },
+        {
+            "codigo": "EF03LP26",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Identificar e reproduzir, em relatórios de observação e pesquisa, a formatação e diagramação específica desses gêneros (passos ou listas de itens, tabelas, ilustrações, gráficos, resumo dos resultados), inclusive em suas versões orais."
+        },
+        {
+            "codigo": "EF03LP27",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 3,
+            "descricao": "Recitar cordel e cantar repentes e emboladas, observando as rimas e obedecendo ao ritmo e à melodia."
+        }
+    ]
+} 

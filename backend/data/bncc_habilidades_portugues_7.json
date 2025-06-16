@@ -1,0 +1,144 @@
+{
+    "habilidades": [
+        {
+            "codigo": "EF07LP01",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Distinguir diferentes propostas editoriais – sensacionalismo, jornalismo investigativo etc. –, de forma a identificar os recursos utilizados para impactar/chocar o leitor que podem comprometer uma análise crítica da notícia e do fato noticiado."
+        },
+        {
+            "codigo": "EF07LP02",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Comparar notícias e reportagens sobre um mesmo fato divulgadas em diferentes mídias, analisando as especificidades das mídias, os processos de (re)elaboração dos textos e a convergência das mídias em ambiente digital."
+        },
+        {
+            "codigo": "EF07LP03",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Formar, com base em palavras primitivas, palavras derivadas com os prefixos e sufixos mais produtivos no português."
+        },
+        {
+            "codigo": "EF07LP04",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Reconhecer, em textos, o verbo como o núcleo das orações."
+        },
+        {
+            "codigo": "EF07LP05",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Identificar, em orações de textos lidos ou de produção própria, verbos de predicação completa e incompleta: intransitivos e transitivos."
+        },
+        {
+            "codigo": "EF07LP06",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Empregar as regras básicas de concordância nominal e verbal em situações comunicativas e na produção de textos."
+        },
+        {
+            "codigo": "EF07LP07",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Identificar, em textos lidos ou de produção própria, a estrutura básica da oração: sujeito, predicado, complemento (objetos direto e indireto)."
+        },
+        {
+            "codigo": "EF07LP08",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Identificar, em textos lidos ou de produção própria, adjetivos que ampliam o sentido do substantivo sujeito ou complemento verbal."
+        },
+        {
+            "codigo": "EF07LP09",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Identificar, em textos lidos ou de produção própria, advérbios e locuções adverbiais que ampliam o sentido do verbo núcleo da oração."
+        },
+        {
+            "codigo": "EF07LP10",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Utilizar, ao produzir texto, conhecimentos linguísticos e gramaticais: regras sintáticas de concordância nominal e verbal, convenções de escrita de citações, pontuação (ponto-e-vírgula, dois-pontos, aspas, reticências) e regras ortográficas."
+        },
+        {
+            "codigo": "EF07LP11",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Identificar, em textos lidos ou de produção própria, períodos compostos nos quais duas orações são conectadas por vírgula, ou por conjunções que expressem sentido de adição, oposição, tempo, causa, condição ou finalidade."
+        },
+        {
+            "codigo": "EF07LP12",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Reconhecer recursos de coesão referencial: substituições lexicais (de substantivos por sinônimos) ou pronominais (uso de pronomes anafóricos – pessoais, possessivos, demonstrativos)."
+        },
+        {
+            "codigo": "EF07LP13",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Estabelecer relações entre partes do texto, identificando substituições lexicais (de substantivos por sinônimos) ou pronominais (uso de pronomes anafóricos – pessoais, possessivos, demonstrativos), que contribuem para a continuidade do texto."
+        },
+        {
+            "codigo": "EF07LP14",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Identificar, em textos, os efeitos de sentido do uso de estratégias de modalização e argumentatividade."
+        },
+        {
+            "codigo": "EF07LP15",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Utilizar estratégias de planejamento, elaboração, revisão, edição, reescrita/ redesign (esses três últimos quando não for situação ao vivo) e avaliação de textos orais, considerando sua adequação aos contextos em que foram produzidos, à forma composicional e estilo de gêneros, a clareza, progressão temática e variedade linguística empregada, os elementos relacionados à fala, como modulação de voz, entonação, ritmo, altura e intensidade, respiração etc., os elementos cinésicos, como postura corporal, movimentos e gestualidade significativa, expressão facial, contato de olho com plateia etc."
+        },
+        {
+            "codigo": "EF07LP16",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Produzir resenhas críticas, vlogs, vídeos, podcasts variados e produções e gêneros textuais que circulam nas diferentes mídias e têm relação com os temas, finalidades e públicos pretendidos das situações de comunicação não-digitais."
+        },
+        {
+            "codigo": "EF07LP17",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Analisar, a partir do contexto de produção, a forma de organização das sequências expositivas e argumentativas nos gêneros jornalísticos de opinião (editorial, artigo de opinião, carta de leitor), diferenciando fato de opinião e objetividade de subjetividade."
+        },
+        {
+            "codigo": "EF07LP18",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Produzir textos jornalísticos e publicitários, levando em conta as condições de produção do texto – objetivo, leitores/espectadores, veículos e mídia de circulação etc. –, a partir da escolha do gênero mais adequado (editorial, artigo de opinião, carta de leitor, comentário, caricatura, charge, etc.), da estrutura composicional e das marcas linguísticas características do gênero."
+        },
+        {
+            "codigo": "EF07LP19",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Realizar levantamento de questões, problemas que requeiram a denúncia de desrespeito a direitos, reivindicações, reclamações, solicitações que contemplem a comunidade escolar ou algum de seus membros e examinar normas e legislações."
+        },
+        {
+            "codigo": "EF07LP20",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 7,
+            "descricao": "Analisar, tendo em vista o contexto de produção, a forma de organização das sequências expositivas e argumentativas nos gêneros jornalísticos de opinião (editorial, artigo de opinião, carta de leitor), diferenciando fato de opinião e objetividade de subjetividade."
+        }
+    ]
+} 

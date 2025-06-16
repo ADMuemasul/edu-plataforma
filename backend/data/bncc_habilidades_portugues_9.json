@@ -1,0 +1,144 @@
+{
+    "habilidades": [
+        {
+            "codigo": "EF09LP01",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Analisar o fenômeno da disseminação de notícias falsas nas redes sociais e desenvolver estratégias para reconhecê-las, a partir da verificação/avaliação do veículo, fonte, data e local da publicação, autoria, URL, da análise da formatação, da comparação com outras fontes, da consulta a sites de curadoria que atestam a fidedignidade do relato dos fatos e denunciam boatos etc."
+        },
+        {
+            "codigo": "EF09LP02",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Analisar e comentar a cobertura da imprensa sobre fatos de relevância social, comparando diferentes enfoques por meio do uso de ferramentas de curadoria."
+        },
+        {
+            "codigo": "EF09LP03",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Produzir artigos de opinião, tendo em vista o contexto de produção dado, assumindo posição diante de tema polêmico, argumentando de acordo com a estrutura própria desse tipo de texto e utilizando diferentes tipos de argumentos – de autoridade, comprovação, exemplificação princípio etc."
+        },
+        {
+            "codigo": "EF09LP04",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Escrever textos corretamente, de acordo com a norma-padrão, com estruturas sintáticas complexas no nível da oração e do período."
+        },
+        {
+            "codigo": "EF09LP05",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Identificar, em textos lidos e em produções próprias, orações com a estrutura sujeito-verbo de ligação-predicativo."
+        },
+        {
+            "codigo": "EF09LP06",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Diferenciar liberdade de expressão de discursos de ódio, posicionando-se contrariamente a esse tipo de discurso e vislumbrando possibilidades de denúncia quando for o caso."
+        },
+        {
+            "codigo": "EF09LP07",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Comparar o uso de recursos expressivos em diferentes gêneros jornalísticos e publicitários, analisando os efeitos de sentido que provocam."
+        },
+        {
+            "codigo": "EF09LP08",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Identificar, em textos lidos e em produções próprias, a relação que conjunções (e locuções conjuntivas) coordenativas e subordinativas estabelecem entre as orações que conectam."
+        },
+        {
+            "codigo": "EF09LP09",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Identificar efeitos de sentido do uso de orações adjetivas restritivas e explicativas em um período composto."
+        },
+        {
+            "codigo": "EF09LP10",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Comparar as regras de colocação pronominal na norma-padrão com o seu uso no português brasileiro coloquial."
+        },
+        {
+            "codigo": "EF09LP11",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Inferir efeitos de sentido decorrentes do uso de recursos de coesão sequencial (conjunções e articuladores textuais)."
+        },
+        {
+            "codigo": "EF09LP12",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Identificar estrangeirismos, caracterizando-os segundo a conservação, ou não, de sua forma gráfica de origem, avaliando a pertinência, ou não, de seu uso."
+        },
+        {
+            "codigo": "EF09LP13",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Desenvolver autonomia de leitura de textos literários, de leituras para o letramento literário."
+        },
+        {
+            "codigo": "EF09LP14",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Determinar o sentido global do texto, identificando suas principais ideias/teses, organizando-as em itens, renomeando-as e explicitando as relações entre elas."
+        },
+        {
+            "codigo": "EF09LP15",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Identificar, em textos escritos e multissemióticos, efeitos de sentido decorrentes do emprego de recursos de modalização."
+        },
+        {
+            "codigo": "EF09LP16",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Produzir resenhas, a partir das notas e/ou esquemas feitos, com o manejo adequado das vozes envolvidas (do resenhador, do autor da obra e, se for o caso, de outros autores citados na obra ou nos paratextos), por meio do uso adequado de paráfrases, marcas do discurso reportado e citações."
+        },
+        {
+            "codigo": "EF09LP17",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Desenvolver estratégias de leitura, de busca de informação e de pesquisa, selecionando procedimentos e checando fontes."
+        },
+        {
+            "codigo": "EF09LP18",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Analisar e avaliar textos de divulgação científica, tendo em vista os contextos de produção dos textos, os conhecimentos prévios sobre o tema, a credibilidade e objetividade das fontes, como forma de ampliar a compreensão de textos que circulam nos meios digitais."
+        },
+        {
+            "codigo": "EF09LP19",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Analisar, em gêneros orais que envolvam argumentação, os efeitos de sentido de elementos típicos da modalidade falada, como a pausa, a entonação, o ritmo, a gestualidade e expressão facial, as hesitações etc."
+        },
+        {
+            "codigo": "EF09LP20",
+            "componente": "LP",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Comparar e contrastar temas, enfoques e estilos de épocas diferentes, em especial do Romantismo, Realismo, Naturalismo, Parnasianismo e Simbolismo, alastrando o estudo da literatura para o contexto histórico, social e político de produção, de circulação e de recepção."
+        }
+    ]
+} 

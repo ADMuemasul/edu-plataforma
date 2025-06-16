@@ -1,0 +1,144 @@
+{
+    "habilidades": [
+        {
+            "codigo": "EF09MA01",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Reconhecer que, uma vez fixada uma unidade de comprimento, existem segmentos de reta cujo comprimento não é expresso por número racional (como as medidas de diagonais de um polígono, alturas de um triângulo, entre outros), e que, nesses casos, é preciso construir outros números, os irracionais, para representar essas medidas."
+        },
+        {
+            "codigo": "EF09MA02",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Reconhecer um número irracional como um número real cuja representação decimal é infinita e não periódica, e estimar a localização de alguns deles na reta numérica."
+        },
+        {
+            "codigo": "EF09MA03",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Efetuar cálculos com números reais, inclusive potências com expoentes fracionários."
+        },
+        {
+            "codigo": "EF09MA04",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Resolver e elaborar problemas com números reais, inclusive em notação científica, envolvendo diferentes operações."
+        },
+        {
+            "codigo": "EF09MA05",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Compreender os processos de fatoração de expressões algébricas, com base em suas relações com os produtos notáveis, para resolver e elaborar problemas que possam ser representados por equações polinomiais do 2º grau."
+        },
+        {
+            "codigo": "EF09MA06",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Compreender e utilizar a notação científica para representar números em contextos que envolvam números muito grandes ou muito pequenos."
+        },
+        {
+            "codigo": "EF09MA07",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Resolver problemas que envolvam a razão entre duas grandezas de espécies diferentes, como velocidade e densidade demográfica."
+        },
+        {
+            "codigo": "EF09MA08",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Resolver e elaborar problemas que envolvam relações de proporcionalidade direta e inversa entre duas ou mais grandezas, incluindo escalas, divisão em partes proporcionais e taxa de variação, em contextos socioculturais, ambientais e de outras áreas."
+        },
+        {
+            "codigo": "EF09MA09",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Compreender a função polinomial de 1º grau ou função afim, relacionando-a com a proporcionalidade, e utilizar a notação algébrica f(x) = ax + b, com a ≠ 0, para representá-la, identificando seus coeficientes angular e linear."
+        },
+        {
+            "codigo": "EF09MA10",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Comparar funções lineares e não lineares em situações de proporcionalidade direta e inversa, como a relação entre lado e área de uma figura poligonal ao se dobrar ou triplicar a medida do lado."
+        },
+        {
+            "codigo": "EF09MA11",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Resolver problemas por meio do estabelecimento de relações entre variáveis, selecionando os gráficos mais adequados para representá-las."
+        },
+        {
+            "codigo": "EF09MA12",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Reconhecer as condições necessárias e suficientes para que dois triângulos sejam semelhantes."
+        },
+        {
+            "codigo": "EF09MA13",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Demonstrar relações métricas do triângulo retângulo, entre elas o teorema de Pitágoras, utilizando, inclusive, a semelhança de triângulos."
+        },
+        {
+            "codigo": "EF09MA14",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Resolver e elaborar problemas de aplicação do teorema de Pitágoras ou das relações de proporcionalidade envolvendo retas paralelas cortadas por secantes."
+        },
+        {
+            "codigo": "EF09MA15",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Determinar o ponto médio de um segmento de reta e a distância entre dois pontos quaisquer, dadas as coordenadas desses pontos no plano cartesiano, sem o uso de fórmulas, e utilizar esse conhecimento para calcular, por exemplo, medidas de perímetros e áreas de figuras planas construídas no plano."
+        },
+        {
+            "codigo": "EF09MA16",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Determinar o ponto médio de um segmento de reta e a distância entre dois pontos quaisquer, dadas as coordenadas desses pontos no plano cartesiano, sem o uso de fórmulas, e utilizar esse conhecimento para calcular, por exemplo, medidas de perímetros e áreas de figuras planas construídas no plano."
+        },
+        {
+            "codigo": "EF09MA17",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Reconhecer vistas ortogonais de figuras espaciais e aplicar esse conhecimento para desenhar objetos em perspectiva."
+        },
+        {
+            "codigo": "EF09MA18",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Reconhecer e empregar unidades usadas para expressar medidas muito grandes ou muito pequenas, tais como distância entre planetas e sistemas solares, tamanho de vírus, de bactérias, da espessura de uma lâmina de papel, de nanopartículas, com o uso de notação científica."
+        },
+        {
+            "codigo": "EF09MA19",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Resolver e elaborar problemas que envolvam medidas de volumes de prismas e de cilindros retos, inclusive com uso de expressões de cálculo, em situações cotidianas."
+        },
+        {
+            "codigo": "EF09MA20",
+            "componente": "MAT",
+            "etapa": "EF",
+            "ano": 9,
+            "descricao": "Reconhecer, nomear e comparar polígonos, considerando lados, vértices e ângulos, e classificá-los em regulares e não regulares, tanto em suas representações no plano quanto em faces de poliedros."
+        }
+    ]
+} 

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPlataforma - {% block title %}{% endblock %}</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #6C63FF;
+            --primary-dark: #4D44DB;
+            --accent: #FF6584;
+            --light: #F8F9FA;
+            --dark: #2E2E3A;
+            --gray: #E0E0E0;
+            --sidebar-width: 280px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #F5F7FB;
+            color: var(--dark);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar Estilizada (FIXA EM TODAS AS PÁGINAS) */
+        .sidebar {
+            width: var(--sidebar-width);
+            background: linear-gradient(180deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 2rem 1.5rem;
+            position: fixed;
+            height: 100vh;
+            box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+            z-index: 100;
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .user-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .user-info p:first-child {
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        .user-info p:last-child {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav li {
+            margin-bottom: 0.8rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            padding: 0.8rem 1rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateX(5px);
+        }
+
+        nav a i {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+
+        .menu-title {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 1.5rem 0 0.5rem 1rem;
+        }
+
+        /* Conteúdo Principal */
+        .main-content {
+            flex: 1;
+            margin-left: var(--sidebar-width);
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        /* Responsividade */
+        @media (max-width: 992px) {
+            .sidebar {
+                transform: translateX(-100%);
+                width: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+
+            .sidebar.active {
+                width: var(--sidebar-width);
+                padding: 2rem 1.5rem;
+                transform: translateX(0);
+            }
+        }
+    </style>
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <!-- Menu Lateral FIXO -->
+    <div class="sidebar">
+        <h2><i class="fas fa-graduation-cap"></i> EduPlataforma</h2>
+        <div class="user-info">
+            {% if 'user_name' in session %}
+                <p>Bem-vindo, {{ session.user_name }}</p>
+                <p>{{ session.user_email }}</p>
+            {% endif %}
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/dashboard" {% if request.path == '/dashboard' %}class="active"{% endif %}><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="/habilidades" {% if request.path == '/habilidades' %}class="active"{% endif %}><i class="fas fa-book"></i> Habilidades BNCC</a></li>
+                <li><a href="/plano-aula" {% if request.path == '/plano-aula' %}class="active"{% endif %}><i class="fas fa-file-alt"></i> Gerar Plano de Aula</a></li>
+                <li><a href="/questoes" {% if request.path == '/questoes' %}class="active"{% endif %}><i class="fas fa-question-circle"></i> Questões</a></li>
+                <li><a href="/cadernos" {% if request.path == '/cadernos' %}class="active"{% endif %}><i class="fas fa-book"></i> Cadernos</a></li>
+                <li><a href="/lanca-resultado" {% if request.path == '/lanca-resultado' %}class="active"{% endif %}><i class="fas fa-chart-bar"></i> Lança Resultado</a></li>
+                <li class="menu-title">Gestão Escolar</li>
+                <li><a href="/escolas" {% if request.path == '/escolas' %}class="active"{% endif %}><i class="fas fa-school"></i> Escolas</a></li>
+                <li><a href="/turmas" {% if request.path == '/turmas' %}class="active"{% endif %}><i class="fas fa-users"></i> Turmas</a></li>
+                <li><a href="/alunos" {% if request.path == '/alunos' %}class="active"{% endif %}><i class="fas fa-user-graduate"></i> Alunos</a></li>
+                <li><a href="/logout"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <!-- Conteúdo Dinâmico -->
+    <div class="main-content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <script>
+        // Menu responsivo
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.createElement('div');
+            menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+            menuToggle.style.position = 'fixed';
+            menuToggle.style.top = '20px';
+            menuToggle.style.left = '20px';
+            menuToggle.style.zIndex = '1000';
+            menuToggle.style.fontSize = '1.5rem';
+            menuToggle.style.color = 'var(--primary)';
+            menuToggle.style.cursor = 'pointer';
+            menuToggle.style.display = 'none';
+            document.body.appendChild(menuToggle);
+
+            function checkScreenSize() {
+                if (window.innerWidth <= 992) {
+                    menuToggle.style.display = 'block';
+                } else {
+                    menuToggle.style.display = 'none';
+                    document.querySelector('.sidebar').classList.remove('active');
+                }
+            }
+
+            menuToggle.addEventListener('click', function() {
+                document.querySelector('.sidebar').classList.toggle('active');
+            });
+
+            window.addEventListener('resize', checkScreenSize);
+            checkScreenSize();
+        });
+    </script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>
